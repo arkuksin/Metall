@@ -170,6 +170,7 @@ img { max-width: 100%; display: block; }
   padding: 0.25rem 0.85rem;
   min-width: 9.5ch;
   justify-content: center;
+  white-space: nowrap;
   transition: color 0.9s ease, border-color 0.9s ease;
 }
 .year-era { font-size: 0.72rem; color: var(--ink-soft); letter-spacing: 0.04em; }
@@ -184,6 +185,40 @@ img { max-width: 100%; display: block; }
   transition: color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
 }
 .theme-toggle:hover { color: var(--epoch-active); border-color: var(--epoch-active); transform: rotate(-8deg); }
+
+/* Sprachumschalter — Pendant zum Jahreszähler; das aktive Segment
+   nimmt die Epochenfarbe an und wandert so durch die Farbdramaturgie */
+.lang {
+  display: inline-flex;
+  align-items: stretch;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  overflow: hidden;
+  font-family: var(--font-sans);
+}
+.lang-btn {
+  appearance: none;
+  margin: 0;
+  border: 0;
+  border-left: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink-soft);
+  cursor: pointer;
+  padding: 0.28rem 0.62rem;
+  font-family: inherit;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  transition: color 0.3s ease, background-color 0.4s ease;
+}
+.lang-btn:first-child { border-left: 0; }
+.lang-btn:hover { color: var(--epoch-active); }
+.lang-btn.is-active {
+  color: var(--paper);
+  background: var(--epoch-active);
+  transition: background-color 0.9s ease;
+}
 
 /* ---------- Zeitleisten-Rail (Desktop) ---------- */
 
@@ -664,13 +699,24 @@ img { max-width: 100%; display: block; }
   .hero-art img { aspect-ratio: 16 / 10; }
   .artefact-card { grid-template-columns: 96px minmax(0, 1fr); gap: 1rem; padding: 1.1rem 1.2rem; }
   .artefact-card img { width: 96px; height: 96px; }
+  .topbar-right { gap: 0.6rem; }
   .year-counter { font-size: 0.85rem; min-width: 8ch; }
 }
 
+/* Enge Topbar: Marke, Sprachumschalter, Jahreszähler und Toggle verdichten */
+@media (max-width: 560px) {
+  .brand { font-size: 0.85rem; }
+  .topbar-right { gap: 0.5rem; }
+  .lang-btn { padding: 0.26rem 0.48rem; letter-spacing: 0.05em; }
+  .year-counter { font-size: 0.8rem; min-width: 6.5ch; padding: 0.22rem 0.55rem; }
+}
+
+/* Phones: die Marke weicht (der Titel steht ohnehin groß im Hero),
+   damit Sprachumschalter, Jahreszähler und Toggle auf einer Zeile bleiben */
 @media (max-width: 480px) {
   body { font-size: 1rem; }
-  .brand { font-size: 0.95rem; }
   .topbar { padding: 0.55rem 1rem; }
+  .brand { display: none; }
   .spot { width: 36px; height: 36px; }
 }
 
