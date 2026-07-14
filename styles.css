@@ -693,6 +693,17 @@ img { max-width: 100%; display: block; }
   text-wrap: balance;
 }
 
+/* „Kurz gesagt"-Zeile: das Prinzip in einem Alltagssatz, bevor die Schritte kommen */
+.tech-plain {
+  margin: 0.6rem 0 0;
+  max-width: 52rem;
+  font-style: italic;
+  font-size: 1.02rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  text-wrap: pretty;
+}
+
 .tech-art {
   grid-area: art;
   margin: 0;

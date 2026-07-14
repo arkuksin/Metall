@@ -11,9 +11,9 @@
   <link rel="preload" href="assets/fonts/archivo-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
   <!-- ?v bei jeder Änderung an CSS/JS erhöhen — bricht veraltete CDN-/Browser-Caches,
        damit HTML und Skripte nach einem Deploy immer als ein Satz zusammenpassen -->
-  <link rel="stylesheet" href="styles.css?v=3">
-  <script src="i18n.js?v=3" defer></script>
-  <script src="main.js?v=3" defer></script>
+  <link rel="stylesheet" href="styles.css?v=4">
+  <script src="i18n.js?v=4" defer></script>
+  <script src="main.js?v=4" defer></script>
 </head>
 <body>
   <a class="skip" href="#kap-1" data-i18n="ui.skip">Zum ersten Kapitel springen</a>
@@ -92,17 +92,18 @@
         <header class="tech-head">
           <p class="tech-kicker" data-i18n="tech.kicker">Werkbank</p>
           <h3 class="tech-title" data-i18n="tech1.title">Wie das Kaltschmieden funktioniert</h3>
+          <p class="tech-plain" data-i18n="tech1.plain">Kurz gesagt: Klopfen macht Kupfer hart und irgendwann brüchig — ein kurzes Bad in der Glut macht es wieder weich. Das lässt sich beliebig oft wiederholen.</p>
         </header>
         <figure class="tech-art">
           <img src="assets/img/tech-01-kaltschmieden.webp" data-i18n-alt="tech1.alt" alt="Buntstift-Schautafel: Eine Hand klopft ein Kupferstück auf einem Steinamboss; Lupenkreise zeigen das innere Gefüge — geordnet, nach dem Hämmern gestaucht, nach dem Feuer wieder entspannt; Pfeile verbinden Hammer, Lupen und Lagerfeuer zu einem Kreislauf." loading="lazy">
         </figure>
         <ol class="tech-steps">
-          <li data-i18n="tech1.s1">Jeder Schlag verschiebt die Ebenen des Kupfer-Kristallgitters gegeneinander; die Störungen stauen sich, das Metall wird härter — Kaltverfestigung.</li>
-          <li data-i18n="tech1.s2">Irgendwann kann das gestaute Gefüge nicht mehr ausweichen: Weiterhämmern reißt es auf.</li>
-          <li data-i18n="tech1.s3">In der Glut ordnen sich die Atome zu frischen, spannungsfreien Körnern — Rekristallisation. Das Kupfer ist wieder weich, ohne je zu schmelzen.</li>
-          <li data-i18n="tech1.s4">Hämmern, glühen, wieder hämmern: In diesem Kreislauf entstanden Perlen, Nadeln und Ahlen.</li>
+          <li data-i18n="tech1.s1">Kupfer besteht innen aus winzigen, ordentlich gestapelten Lagen von Atomen. Jeder Hammerschlag verschiebt diese Lagen und knautscht sie ineinander.</li>
+          <li data-i18n="tech1.s2">Je zerknautschter das Innere, desto härter wird das Metall — aber auch desto spröder. Wer einfach weiterklopft, schlägt Risse hinein.</li>
+          <li data-i18n="tech1.s3">Legt man das Stück kurz in die Glut, rütteln sich die Atome zurecht und stapeln sich frisch und ordentlich neu — Fachwort: Rekristallisation. Das Kupfer ist wieder weich, geschmolzen ist dabei nichts.</li>
+          <li data-i18n="tech1.s4">Dann beginnt alles von vorn: klopfen, glühen, wieder klopfen. Genau in diesem Kreislauf entstanden vor 10.000 Jahren Perlen, Nadeln und Ahlen.</li>
         </ol>
-        <p class="tech-fact"><strong class="tech-fact-num" data-i18n="tech1.factnum">≈ 300 °C</strong> <span data-i18n="tech1.facttext">mehr braucht das Weichglühen nicht — gewöhnliche Lagerfeuerglut genügt.</span></p>
+        <p class="tech-fact"><strong class="tech-fact-num" data-i18n="tech1.factnum">≈ 300 °C</strong> <span data-i18n="tech1.facttext">reichen für das Weichglühen — das schafft jedes Lagerfeuer.</span></p>
       </div>
     </aside>
 
@@ -131,17 +132,18 @@
         <header class="tech-head">
           <p class="tech-kicker" data-i18n="tech.kicker">Werkbank</p>
           <h3 class="tech-title" data-i18n="tech2.title">Wie die erste Verhüttung funktioniert</h3>
+          <p class="tech-plain" data-i18n="tech2.plain">Kurz gesagt: Im grünen Erz steckt Kupfer, fest an Sauerstoff gekettet. Glühende Holzkohle nimmt ihm den Sauerstoff ab — übrig bleibt reines, flüssiges Metall.</p>
         </header>
         <figure class="tech-art">
           <img src="assets/img/tech-02-verhuettung.webp" data-i18n-alt="tech2.alt" alt="Buntstift-Schautafel: Querschnitt einer Schmelzgrube — Schichten aus Holzkohle und grünem Malachit, zwei Blasrohre mit Luftpfeilen, am Grund sammelt sich flüssiges Kupfer, daneben eine offene Steinform für ein Beil." loading="lazy">
         </figure>
         <ol class="tech-steps">
-          <li data-i18n="tech2.s1">In der Grube glüht Holzkohle; durch Blasrohre gepresste Luft treibt die Temperatur über den Schmelzpunkt des Kupfers.</li>
-          <li data-i18n="tech2.s2">Die Hitze zerlegt den Malachit zu Kupferoxid — und das Kohlenmonoxid der Glut entreißt ihm den Sauerstoff: Reduktion.</li>
-          <li data-i18n="tech2.s3">Blankes Kupfer sammelt sich flüssig am Grund; Gestein und Asche schwimmen als Schlacke obenauf.</li>
-          <li data-i18n="tech2.s4">Das flüssige Metall wird in Formen aus Stein oder Ton gegossen — aus grünem Stein ist Werkzeug geworden.</li>
+          <li data-i18n="tech2.s1">Holzkohle brennt heißer als jedes Lagerholz — und wer durch Rohre kräftig hineinbläst, facht sie weiter an. Erst so wird die kleine Grube heiß genug, um Kupfer zu schmelzen.</li>
+          <li data-i18n="tech2.s2">Malachit ist kein Kupfer zum Aufsammeln, sondern Kupfer in Fesseln: an Sauerstoff gebunden. In der Glut entsteht Kohlenmonoxid — ein Gas, das Sauerstoff an sich reißt und dem Erz die Fesseln abnimmt. Genau das heißt Reduktion.</li>
+          <li data-i18n="tech2.s3">Das befreite Kupfer sammelt sich als flüssige Pfütze am tiefsten Punkt der Grube. Alles, was kein Metall ist — Gestein, Asche —, schwimmt leichter obenauf: die Schlacke.</li>
+          <li data-i18n="tech2.s4">Zum Schluss wird abgegossen: In einer Form aus Stein oder Ton erstarrt die Pfütze zu Beil, Meißel oder Schmuck.</li>
         </ol>
-        <p class="tech-fact"><strong class="tech-fact-num" data-i18n="tech2.factnum">CO</strong> <span data-i18n="tech2.facttext">Kohlenmonoxid ist das eigentliche Werkzeug der Verhüttung: Es trägt den Sauerstoff aus dem Erz davon.</span></p>
+        <p class="tech-fact"><strong class="tech-fact-num" data-i18n="tech2.factnum">CO</strong> <span data-i18n="tech2.facttext">Kohlenmonoxid — das Gas, das dem Erz den Sauerstoff stiehlt. Der stille Held jeder Verhüttung.</span></p>
       </div>
     </aside>
 
@@ -181,17 +183,18 @@
         <header class="tech-head">
           <p class="tech-kicker" data-i18n="tech.kicker">Werkbank</p>
           <h3 class="tech-title" data-i18n="tech3.title">Wie der Bronzeguss funktioniert</h3>
+          <p class="tech-plain" data-i18n="tech3.plain">Kurz gesagt: Ein Schuss Zinn macht aus Kupfer Bronze — härter und beim Gießen folgsamer. Und mit einer Form lässt sich dasselbe Stück wieder und wieder gießen.</p>
         </header>
         <figure class="tech-art">
           <img src="assets/img/tech-03-bronzeguss.webp" data-i18n-alt="tech3.alt" alt="Buntstift-Schautafel: Aufgeklappte zweiteilige Steinform für ein Schwert mit Eingusstrichter, ein Tiegel gießt goldene Bronze; kleine Folge daneben: Wachsfigur, Tonmantel, ausgeschmolzene Form; eine Schale mit neun Kupfer- und einer Zinnscheibe." loading="lazy">
         </figure>
         <ol class="tech-steps">
-          <li data-i18n="tech3.s1">Neun Teile Kupfer, ein Teil Zinn schmelzen im Tontiegel; die Mischung schmilzt früher als reines Kupfer und fließt dünnflüssiger in jeden Winkel.</li>
-          <li data-i18n="tech3.s2">Die zweiteilige Steinform ist vorgewärmt und innen geschwärzt, damit sich der Guss löst; feine Kanäle lassen die verdrängte Luft entweichen.</li>
-          <li data-i18n="tech3.s3">Für filigrane Stücke wird ein Wachsmodell mit Ton ummantelt und das Wachs ausgeschmolzen — der Hohlraum ist die verlorene Form.</li>
-          <li data-i18n="tech3.s4">Nach dem Erstarren: Form öffnen, Gusshaut und Grate abarbeiten, die Schneide kalt nachhämmern — das verdichtet und härtet sie.</li>
+          <li data-i18n="tech3.s1">In das geschmolzene Kupfer kommt etwa ein Zehntel Zinn. Die Mischung schmilzt leichter als reines Kupfer, bleibt länger dünnflüssig und füllt darum auch die feinsten Ecken der Form.</li>
+          <li data-i18n="tech3.s2">Die Form: zwei passgenaue Steinhälften mit eingemeißeltem Hohlraum. Vorwärmen schützt den Stein vor dem Hitzeschock, Ruß an den Wänden wirkt wie Trennmittel — und feine Rillen lassen die Luft entweichen, wenn das Metall einströmt.</li>
+          <li data-i18n="tech3.s3">Für verwickelte Stücke formt man erst ein Modell aus Wachs, packt es in Ton und brennt den Ton hart: Das Wachs läuft heraus, sein Abdruck bleibt als Hohlraum. Einmal gießen, Mantel zerschlagen — jedes Stück ein Unikat.</li>
+          <li data-i18n="tech3.s4">Nach dem Abkühlen: Form öffnen, Gusshaut und Nähte abarbeiten — und die Schneide kalt nachhämmern, denn das verdichtet sie und macht sie härter. Das alte Wissen vom Kaltschmieden bleibt im Spiel.</li>
         </ol>
-        <p class="tech-fact"><strong class="tech-fact-num" data-i18n="tech3.factnum">9 : 1</strong> <span data-i18n="tech3.facttext">das klassische Rezept der Bronzezeit — und bis heute die Grundformel vieler Bronzen.</span></p>
+        <p class="tech-fact"><strong class="tech-fact-num" data-i18n="tech3.factnum">9 : 1</strong> <span data-i18n="tech3.facttext">neun Teile Kupfer, ein Teil Zinn — das Grundrezept der Bronze, bis heute.</span></p>
       </div>
     </aside>
 
@@ -231,17 +234,18 @@
         <header class="tech-head">
           <p class="tech-kicker" data-i18n="tech.kicker">Werkbank</p>
           <h3 class="tech-title" data-i18n="tech4.title">Wie der Rennofen funktioniert</h3>
+          <p class="tech-plain" data-i18n="tech4.plain">Kurz gesagt: Der Rennofen kann Eisen gar nicht schmelzen — und muss es auch nicht. Er holt es als festen, glühenden Schwamm aus dem Erz. Flüssig wird nur der Abfall.</p>
         </header>
         <figure class="tech-art">
           <img src="assets/img/tech-04-rennofen.webp" data-i18n-alt="tech4.alt" alt="Buntstift-Schautafel: Querschnitt eines Rennofens — Schichten aus Erz und Holzkohle, Blasebalg und Tondüsen mit Luftpfeilen, ablaufende Schlacke, die glühende Luppe über den Düsen; daneben verdichtet ein Hammer die Luppe auf einem Amboss." loading="lazy">
         </figure>
         <ol class="tech-steps">
-          <li data-i18n="tech4.s1">Der Lehmschacht wird abwechselnd mit Holzkohle und geröstetem Erz beschickt; Blasebälge pressen Luft durch Tondüsen an seinem Fuß.</li>
-          <li data-i18n="tech4.s2">Kohlenmonoxid nimmt dem Erz den Sauerstoff — im festen Zustand: Das Eisen wird dabei nie flüssig.</li>
-          <li data-i18n="tech4.s3">Das taube Gestein verbindet sich zu flüssiger Schlacke und rinnt aus dem Ofen — von diesem „Rinnen" hat der Rennofen seinen Namen.</li>
-          <li data-i18n="tech4.s4">Zurück bleibt die Luppe, ein glühender Eisenschwamm. Kräftiges Ausschmieden presst die restliche Schlacke heraus und verdichtet das Metall.</li>
+          <li data-i18n="tech4.s1">In den mannshohen Lehmschacht kommen im Wechsel Holzkohle und geröstetes Erz. Unten pressen Blasebälge Luft durch Tondüsen und halten die Glut in Gang.</li>
+          <li data-i18n="tech4.s2">Wieder arbeitet das Kohlenmonoxid: Während das Erz langsam nach unten sinkt, zieht ihm das Gas den Sauerstoff ab — Korn für Korn. Das Eisen bleibt dabei die ganze Zeit fest.</li>
+          <li data-i18n="tech4.s3">Der steinige Rest des Erzes schmilzt zu Schlacke und rinnt unten aus dem Ofen — von diesem „Rinnen" hat der Rennofen seinen Namen. Flüssig wird nur, was weg soll.</li>
+          <li data-i18n="tech4.s4">Nach Stunden wird der Ofen aufgebrochen. Heraus kommt die Luppe: ein glühender Eisenschwamm, in dessen Poren noch Schlacke sitzt. Kräftiges Hämmern presst sie heraus wie Wasser aus einem Schwamm — übrig bleibt massives Eisen.</li>
         </ol>
-        <p class="tech-fact"><strong class="tech-fact-num" data-i18n="tech4.factnum">1.538 °C</strong> <span data-i18n="tech4.facttext">der Schmelzpunkt von Eisen — für antike Öfen unerreichbar. Der Rennofen umgeht ihn einfach.</span></p>
+        <p class="tech-fact"><strong class="tech-fact-num" data-i18n="tech4.factnum">1.538 °C</strong> <span data-i18n="tech4.facttext">bräuchte es, um Eisen zu schmelzen — kein antiker Ofen schafft das. Der Rennofen umgeht es einfach.</span></p>
       </div>
     </aside>
 
@@ -270,17 +274,18 @@
         <header class="tech-head">
           <p class="tech-kicker" data-i18n="tech.kicker">Werkbank</p>
           <h3 class="tech-title" data-i18n="tech5.title">Wie das Härten funktioniert</h3>
+          <p class="tech-plain" data-i18n="tech5.plain">Kurz gesagt: Härten heißt glühend heiß machen und blitzschnell abkühlen — dann ist Stahl extrem hart, aber launisch-spröde. Sanftes Wiedererwärmen macht ihn gutmütig.</p>
         </header>
         <figure class="tech-art">
           <img src="assets/img/tech-05-haerten.webp" data-i18n-alt="tech5.alt" alt="Buntstift-Schautafel: Drei Stationen des Härtens — Klinge in der Glut, Klinge im dampfenden Wasserfass, Klinge mit strohgelben bis blauen Anlauffarben über kleiner Flamme; Lupenkreise zeigen das Gefüge jeder Station." loading="lazy">
         </figure>
         <ol class="tech-steps">
-          <li data-i18n="tech5.s1">Aufkohlen: Tage in glühender Holzkohle lassen Kohlenstoff in die Oberfläche des Eisens einwandern — erst das macht es härtbar.</li>
-          <li data-i18n="tech5.s2">Härten: Bei Kirschrotglut ordnet sich das Eisengitter um; schlagartiges Abschrecken im Wasser friert es in einer verspannten, extrem harten Struktur ein.</li>
-          <li data-i18n="tech5.s3">So ist die Klinge glashart, aber spröde. Behutsames Wiedererwärmen — das Anlassen — nimmt die Spannung heraus: hart und zäh zugleich.</li>
-          <li data-i18n="tech5.s4">Die Anlauffarben von Strohgelb bis Blau zeigten dem Schmied die Anlasstemperatur an — ein Thermometer aus Farbe.</li>
+          <li data-i18n="tech5.s1">Zuerst braucht das Eisen Kohlenstoff im Gepäck: Tagelang liegt die Klinge in glühender Holzkohle, und Kohlenstoff wandert hauchdünn in ihre Oberfläche ein. Erst so wird aus Eisen härtbarer Stahl.</li>
+          <li data-i18n="tech5.s2">Dann wird die Klinge kirschrot geglüht. Bei dieser Hitze sortieren sich die Eisen-Atome um, und der Kohlenstoff verteilt sich frei zwischen ihnen.</li>
+          <li data-i18n="tech5.s3">Jetzt zischt die Klinge ins Wasser. Für die Rückkehr in ihre alte Ordnung sind die Atome plötzlich zu langsam — sie bleiben in einer verspannten Zwangshaltung stecken, die extrem hart ist. Der Haken: verspannt heißt auch spröde.</li>
+          <li data-i18n="tech5.s4">Darum zum Schluss das Anlassen: mildes Erwärmen, das einen Teil der Spannung löst. Die Klinge bleibt hart, wird aber zäh. Die Temperatur las der Schmied an den Anlauffarben ab — strohgelb, braun, violett, blau.</li>
         </ol>
-        <p class="tech-fact"><strong class="tech-fact-num" data-i18n="tech5.factnum">≈ 800 °C</strong> <span data-i18n="tech5.facttext">Kirschrot: Bei dieser Glühfarbe ist Stahl bereit zum Abschrecken.</span></p>
+        <p class="tech-fact"><strong class="tech-fact-num" data-i18n="tech5.factnum">≈ 800 °C</strong> <span data-i18n="tech5.facttext">Kirschrot — an dieser Glühfarbe erkennt der Schmied: jetzt abschrecken.</span></p>
       </div>
     </aside>
 
@@ -322,17 +327,18 @@
         <header class="tech-head">
           <p class="tech-kicker" data-i18n="tech.kicker">Werkbank</p>
           <h3 class="tech-title" data-i18n="tech6.title">Wie Wasserkraft und Hochofen funktionieren</h3>
+          <p class="tech-plain" data-i18n="tech6.plain">Kurz gesagt: Das Wasserrad ersetzt den Muskel — es hämmert schwerer und bläst stärker als jeder Mensch. Mit dem großen Wind werden die Öfen erstmals so heiß, dass Eisen wirklich fließt.</p>
         </header>
         <figure class="tech-art">
           <img src="assets/img/tech-06-wasserhammer.webp" data-i18n-alt="tech6.alt" alt="Buntstift-Schautafel: Ein Wasserrad treibt eine Nockenwelle, die einen Schwanzhammer hebt und auf glühendes Eisen fallen lässt, mit Dreh- und Hebelpfeilen; im Hintergrund ein kleiner Hochofen-Querschnitt mit Blasebälgen und abfließendem Eisen." loading="lazy">
         </figure>
         <ol class="tech-steps">
-          <li data-i18n="tech6.s1">Das Wasserrad dreht eine Welle mit Nocken; jede Nocke drückt den Schwanz des Hammerbalkens nieder und lässt das Haupt auf den Amboss fallen — im Takt des Baches.</li>
-          <li data-i18n="tech6.s2">Dieselbe Welle walkt mannshohe Blasebälge: mehr Wind, mehr Glut — die Öfen können wachsen.</li>
-          <li data-i18n="tech6.s3">Im hohen Schacht nimmt das niedersinkende Eisen Kohlenstoff auf; das senkt seinen Schmelzpunkt so weit, dass es erstmals flüssig abfließt: Gusseisen.</li>
-          <li data-i18n="tech6.s4">Gusseisen füllt Formen wie einst Bronze, ist aber spröde; wer Schmiedeeisen will, frischt es im Herdfeuer nach — der Kohlenstoff wird wieder ausgetrieben.</li>
+          <li data-i18n="tech6.s1">Auf der Welle des Wasserrads sitzen Daumen (Nocken). Bei jeder Umdrehung drücken sie das hintere Ende des Hammerbalkens nieder — vorn hebt sich der zentnerschwere Kopf und fällt aufs Eisen. Ein simpler Hebel, vom Bach getaktet, unermüdlich.</li>
+          <li data-i18n="tech6.s2">Dieselbe Welle walkt mannshohe Blasebälge. Mehr Luft heißt heißere Glut — und heißere Glut erlaubt höhere, größere Öfen.</li>
+          <li data-i18n="tech6.s3">Im hohen Schacht geschieht dann etwas Neues: Das Eisen sinkt stundenlang durch glühende Kohle und saugt sich dabei mit Kohlenstoff voll. So gesättigt schmilzt es viel früher — und fließt erstmals flüssig aus dem Ofen: Gusseisen.</li>
+          <li data-i18n="tech6.s4">Der Preis: Das kohlenstoffreiche Gusseisen ist hart, aber spröde wie Glas. Gut für Ofenplatten, Töpfe und bald Kanonen — wer schmiedbares Eisen will, brennt den Kohlenstoff im Frischfeuer wieder heraus.</li>
         </ol>
-        <p class="tech-fact"><strong class="tech-fact-num" data-i18n="tech6.factnum">1.147 °C</strong> <span data-i18n="tech6.facttext">mit gut vier Prozent Kohlenstoff schmilzt Eisen fast 400 Grad früher — der Trick des Hochofens.</span></p>
+        <p class="tech-fact"><strong class="tech-fact-num" data-i18n="tech6.factnum">1.147 °C</strong> <span data-i18n="tech6.facttext">genügen, wenn das Eisen rund vier Prozent Kohlenstoff trägt — 400 Grad weniger als rein. Der ganze Trick des Hochofens.</span></p>
       </div>
     </aside>
 
@@ -361,17 +367,18 @@
         <header class="tech-head">
           <p class="tech-kicker" data-i18n="tech.kicker">Werkbank</p>
           <h3 class="tech-title" data-i18n="tech7.title">Wie der Bessemer-Konverter funktioniert</h3>
+          <p class="tech-plain" data-i18n="tech7.plain">Kurz gesagt: Man bläst schlicht Luft durch flüssiges Roheisen. Der störende Kohlenstoff verbrennt — und ausgerechnet diese Verbrennung hält den Kessel von selbst auf Temperatur.</p>
         </header>
         <figure class="tech-art">
           <img src="assets/img/tech-07-bessemer.webp" data-i18n-alt="tech7.alt" alt="Buntstift-Schautafel: Querschnitt einer Bessemer-Birne — feuerfeste Auskleidung, flüssiges Roheisen, Luftdüsen im Boden mit aufsteigenden Blasen, Funkenfontäne aus der Öffnung; daneben drei kleine Stellungen der Birne: befüllen, blasen, ausgießen." loading="lazy">
         </figure>
         <ol class="tech-steps">
-          <li data-i18n="tech7.s1">Die birnenförmige Retorte wird liegend mit flüssigem Roheisen aus dem Hochofen gefüllt und dann aufgerichtet.</li>
-          <li data-i18n="tech7.s2">Pressluft strömt durch Düsen im Boden mitten durch die Schmelze; der gelöste Kohlenstoff verbrennt in einer tosenden Funkenfontäne.</li>
-          <li data-i18n="tech7.s3">Diese Verbrennung heizt die Schmelze von selbst weiter auf — der Konverter braucht keinerlei Brennstoff, die Reaktion trägt sich allein.</li>
-          <li data-i18n="tech7.s4">Dann wird die Birne gekippt und gießt fertigen Stahl; eine dosierte Prise Kohlenstoff zurück, und die Charge stimmt.</li>
+          <li data-i18n="tech7.s1">Aus dem Hochofen kommt Roheisen: flüssig, aber voller Kohlenstoff und darum spröde. Es wird in die kippbare, birnenförmige Riesenflasche gefüllt, die innen mit feuerfestem Stein ausgekleidet ist.</li>
+          <li data-i18n="tech7.s2">Die Birne wird aufgerichtet, und Pressluft strömt durch Düsen im Boden mitten durch die Schmelze. Der Sauerstoff findet den gelösten Kohlenstoff und verbrennt ihn — als tosende Funkenfontäne aus dem Hals der Birne.</li>
+          <li data-i18n="tech7.s3">Das Geniale daran: Die Verbrennung kühlt die Schmelze nicht, sie heizt sie weiter auf. Der Prozess trägt sich selbst — kein Holz, keine Kohle, nur Luft.</li>
+          <li data-i18n="tech7.s4">Nach rund zwanzig Minuten ist der Kohlenstoff verbrannt. Birne kippen, Stahl abgießen, eine genau bemessene Prise Kohlenstoff wieder hinein — fertig ist Stahl nach Maß, tonnenweise statt kiloweise.</li>
         </ol>
-        <p class="tech-fact"><strong class="tech-fact-num" data-i18n="tech7.factnum">≈ 1.600 °C</strong> <span data-i18n="tech7.facttext">am Ende ist die Schmelze heißer als am Anfang — ganz ohne Feuer von außen.</span></p>
+        <p class="tech-fact"><strong class="tech-fact-num" data-i18n="tech7.factnum">≈ 1.600 °C</strong> <span data-i18n="tech7.facttext">heiß ist die Schmelze am Ende — heißer als zu Beginn, ganz ohne Feuer von außen.</span></p>
       </div>
     </aside>
 
@@ -402,17 +409,18 @@
         <header class="tech-head">
           <p class="tech-kicker" data-i18n="tech.kicker">Werkbank</p>
           <h3 class="tech-title" data-i18n="tech8.title">Wie die Aluminium-Elektrolyse funktioniert</h3>
+          <p class="tech-plain" data-i18n="tech8.plain">Kurz gesagt: Aluminium hält seinen Sauerstoff so fest, dass kein Feuer es befreien kann. Nur elektrischer Strom reißt die beiden auseinander — darum gab es Aluminium erst, als es Kraftwerke gab.</p>
         </header>
         <figure class="tech-art">
           <img src="assets/img/tech-08-elektrolyse.webp" data-i18n-alt="tech8.alt" alt="Buntstift-Schautafel: Querschnitt einer Elektrolysezelle — Kohleanoden hängen ins glühende Bad, am Boden sammelt sich silbriges Aluminium, Strompfeile und aufsteigende Bläschen, ein Saugrohr zapft das Metall ab." loading="lazy">
         </figure>
         <ol class="tech-steps">
-          <li data-i18n="tech8.s1">Aluminiumoxid schmilzt erst jenseits von 2.000 Grad — aussichtslos. Gelöst in geschmolzenem Kryolith sinkt die Arbeitstemperatur auf rund 960 Grad.</li>
-          <li data-i18n="tech8.s2">Gleichstrom fließt von Kohleanoden durch das Bad: Am Wannenboden scheidet sich flüssiges Aluminium ab und sammelt sich als silbriger See.</li>
-          <li data-i18n="tech8.s3">Der frei werdende Sauerstoff verbrennt langsam die Kohleanoden — sie zehren sich auf und werden regelmäßig nachgesetzt.</li>
-          <li data-i18n="tech8.s4">Alle paar Tage wird das Metall abgesaugt; die Zelle selbst läuft ununterbrochen weiter, oft jahrelang.</li>
+          <li data-i18n="tech8.s1">Das Hindernis: Aluminiumerz (Tonerde) schmilzt erst jenseits von 2.000 Grad. Der Trick: Man löst es in geschmolzenem Kryolith auf wie Zucker im Tee — schon genügen rund 960 Grad.</li>
+          <li data-i18n="tech8.s2">Durch das Bad fließt kräftiger Gleichstrom, von Kohleblöcken (den Anoden) oben zur Wanne unten. Er spaltet die Tonerde: Das Aluminium sammelt sich als flüssiger, silbriger See am Boden.</li>
+          <li data-i18n="tech8.s3">Der abgespaltene Sauerstoff muss irgendwohin — er verbrennt nach und nach die Kohleblöcke selbst. Sie zehren sich auf wie Kerzen und werden regelmäßig durch frische ersetzt.</li>
+          <li data-i18n="tech8.s4">Alle paar Tage saugt ein Rohr das Metall ab; die Zelle läuft einfach weiter, rund um die Uhr, oft viele Jahre ohne Pause.</li>
         </ol>
-        <p class="tech-fact"><strong class="tech-fact-num" data-i18n="tech8.factnum">≈ 14 kWh</strong> <span data-i18n="tech8.facttext">Strombedarf je Kilogramm Aluminium — darum stehen die Hütten direkt am Kraftwerk.</span></p>
+        <p class="tech-fact"><strong class="tech-fact-num" data-i18n="tech8.factnum">≈ 14 kWh</strong> <span data-i18n="tech8.facttext">Strom stecken in jedem Kilo Aluminium — so viel verbraucht ein Kühlschrank in zwei Wochen. Darum stehen die Hütten am Kraftwerk.</span></p>
       </div>
     </aside>
 
@@ -443,17 +451,18 @@
         <header class="tech-head">
           <p class="tech-kicker" data-i18n="tech.kicker">Werkbank</p>
           <h3 class="tech-title" data-i18n="tech9.title">Wie der 3D-Metalldruck funktioniert</h3>
+          <p class="tech-plain" data-i18n="tech9.plain">Kurz gesagt: Der Drucker baut das Teil aus Metallstaub auf, Schicht für hauchdünne Schicht — der Laser verschweißt in jeder Lage genau die Stellen, die später Metall sein sollen.</p>
         </header>
         <figure class="tech-art">
           <img src="assets/img/tech-09-metalldruck.webp" data-i18n-alt="tech9.alt" alt="Buntstift-Schautafel: Bauraum eines 3D-Metalldruckers — Laser und zwei Spiegel lenken einen türkisen Strahl ins Titanpulver, ein Gitterbauteil wächst heran, eine Rakel schiebt frisches Pulver, Pfeile zeigen die absinkende Plattform." loading="lazy">
         </figure>
         <ol class="tech-steps">
-          <li data-i18n="tech9.s1">Eine Rakel zieht eine hauchdünne Schicht Metallpulver über die Bauplattform — unter Schutzgas, damit nichts verbrennt.</li>
-          <li data-i18n="tech9.s2">Zwei flinke Spiegel lenken den Laser; wo der Strahl trifft, verschmilzt das Pulver mit der Schicht darunter — der Querschnitt des Bauteils, Linie für Linie.</li>
-          <li data-i18n="tech9.s3">Die Plattform senkt sich um genau eine Schichtdicke, frisches Pulver darüber, nächste Lage — viele tausend Mal.</li>
-          <li data-i18n="tech9.s4">Zum Schluss: loses Pulver absaugen und wiederverwenden, Stützstrukturen entfernen, das Bauteil wärmebehandeln.</li>
+          <li data-i18n="tech9.s1">Ein Schieber — die Rakel — streicht eine hauchdünne Lage Metallpulver glatt, dünner als ein Blatt Papier. Alles unter Schutzgas, denn so feiner Metallstaub würde an Luft schlagartig verbrennen.</li>
+          <li data-i18n="tech9.s2">Zwei flinke Spiegel lenken den Laserpunkt über das Pulverbett. Wo er trifft, schmilzt das Pulver auf und verschweißt sich mit der Lage darunter — gezeichnet wird der Umriss genau dieser einen Scheibe des Bauteils.</li>
+          <li data-i18n="tech9.s3">Dann senkt sich die Bauplattform um exakt eine Schichtdicke, die Rakel streicht frisches Pulver darüber, der Laser zeichnet die nächste Scheibe. Viele tausend Mal — das Teil wächst von unten nach oben.</li>
+          <li data-i18n="tech9.s4">Am Ende steckt das fertige Stück im losen Pulver wie ein Fossil im Sand: Pulver absaugen (es wird wiederverwendet), Stützen entfernen, einmal im Ofen entspannen — fertig.</li>
         </ol>
-        <p class="tech-fact"><strong class="tech-fact-num" data-i18n="tech9.factnum">30 µm</strong> <span data-i18n="tech9.facttext">eine typische Schichtdicke — gut halb so dick wie ein menschliches Haar.</span></p>
+        <p class="tech-fact"><strong class="tech-fact-num" data-i18n="tech9.factnum">30 µm</strong> <span data-i18n="tech9.facttext">misst eine Schicht — etwa die halbe Dicke eines Haars. Ein faustgroßes Teil besteht schnell aus 3.000 Schichten.</span></p>
       </div>
     </aside>
 
