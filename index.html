@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vom Feuer geformt — Die Geschichte der Metallbearbeitung</title>
+  <meta name="description" content="Eine geführte Reise durch 11.000 Jahre Metallbearbeitung: vom kalt gehämmerten Kupferkorn bis zum lasergedruckten Titan — erzählt in handgemalten Bildern.">
+  <meta name="theme-color" content="#F3ECDC">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M4 10 h13 c6 0 9-2 11-5 v7 c-2 3-6 5-9 5 h-2 v6 h4 v4 H9 v-4 h4 v-6 H8 c-2 0-4-2-4-4 z' fill='%23A66A32'/%3E%3C/svg%3E">
+  <link rel="preload" href="assets/fonts/fraunces-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/archivo-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#kap-1">Zum ersten Kapitel springen</a>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#top">Vom Feuer geformt</a>
+    <div class="topbar-right">
+      <span class="year-counter" aria-hidden="true"><span id="year-value">9500</span><span class="year-era" id="year-era">v.&thinsp;Chr.</span></span>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Zwischen hellem und dunklem Modus wechseln">
+        <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path class="flame" d="M10 2 C11 5.5 14 6.5 14 10.5 A4 4.3 0 0 1 6 10.5 C6 8 7.5 7.5 8 5.5 C8.8 6.8 9.6 7 9.6 8.5 C10.5 7 9.4 4.5 10 2 Z" fill="currentColor"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <nav class="rail" aria-label="Kapitel der Zeitreise">
+    <svg class="rail-line" viewBox="0 0 20 520" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M10 0 C7 14 13.5 22 8.5 38 C12 52 6.5 60 11.5 76 C7.5 90 12.5 100 9 115 C11.8 130 7.8 142 10.8 158 C8.2 172 11.6 184 9.2 200 C10.9 216 8.6 228 10.4 244 C9.3 260 10.6 272 9.7 288 C10.2 304 9.8 318 10.1 334 C10 350 10 366 10 382 C10 400 10 420 10 440 C10 460 10 490 10 520" fill="none" stroke="currentColor" stroke-width="1.6" vector-effect="non-scaling-stroke"/>
+    </svg>
+    <ol>
+      <li><a href="#kap-1" data-chapter="1"><span class="dot"></span><span class="rail-label">Kaltes Kupfer</span></a></li>
+      <li><a href="#kap-2" data-chapter="2"><span class="dot"></span><span class="rail-label">Schmelzfeuer</span></a></li>
+      <li><a href="#kap-3" data-chapter="3"><span class="dot"></span><span class="rail-label">Bronze</span></a></li>
+      <li><a href="#kap-4" data-chapter="4"><span class="dot"></span><span class="rail-label">Eisen</span></a></li>
+      <li><a href="#kap-5" data-chapter="5"><span class="dot"></span><span class="rail-label">Antiker Stahl</span></a></li>
+      <li><a href="#kap-6" data-chapter="6"><span class="dot"></span><span class="rail-label">Schmiede</span></a></li>
+      <li><a href="#kap-7" data-chapter="7"><span class="dot"></span><span class="rail-label">Industrie</span></a></li>
+      <li><a href="#kap-8" data-chapter="8"><span class="dot"></span><span class="rail-label">Legierungen</span></a></li>
+      <li><a href="#kap-9" data-chapter="9"><span class="dot"></span><span class="rail-label">Zukunft</span></a></li>
+    </ol>
+  </nav>
+
+  <main id="top">
+
+    <section class="hero" data-year-start="-9500" data-year-end="-9500">
+      <p class="hero-kicker">Eine Reise durch elftausend Jahre</p>
+      <h1 class="hero-title">Vom <em>Feuer</em><br>geformt</h1>
+      <p class="hero-sub">Wie der Mensch lernte, das Metall zu zähmen — vom ersten kalt geklopften Kupferkorn am Flussufer bis zum Titanbauteil aus dem Laserdrucker. Neun Kapitel, chronologisch erzählt. Scroll dich durch die Zeit.</p>
+      <a class="hero-start" href="#kap-1">
+        <span>Die Reise beginnen</span>
+        <svg viewBox="0 0 24 44" width="16" height="30" aria-hidden="true"><path d="M12 2 C10 10 14 14 11 22 C13 28 11 32 12 38 M7 33 C9 36 11 39 12 41 C13 39 15 36 17 33" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </a>
+      <figure class="hero-art">
+        <img src="assets/img/00-hero-panorama.webp" alt="Handgemaltes Panorama: Menschen aller Epochen arbeiten an einem langen Amboss — von der Steinzeitfigur mit Hammerstein über den mittelalterlichen Schmied bis zur Ingenieurin am Laserdrucker, verbunden durch einen glühenden Metallstrang." fetchpriority="high">
+      </figure>
+    </section>
+
+    <section class="chapter" id="kap-1" data-chapter="1" data-year-start="-9500" data-year-end="-5000" style="--epoch: var(--e1); --epoch-soft: var(--e1-soft); --wonk: 1; --soft: 100;">
+      <header class="ch-head">
+        <p class="ch-kicker"><span class="ch-num">Kapitel 1</span><span class="ch-range">um 9500 – 5000 v. Chr.</span></p>
+        <h2 class="ch-title">Kaltes Kupfer</h2>
+        <p class="ch-lead">Lange bevor irgendjemand Metall schmelzen konnte, lag es einfach da: <button class="term" popovertarget="g-gediegen">gediegenes</button> Kupfer, rötlich schimmernde Klumpen in den Flussbetten Anatoliens.</p>
+      </header>
+      <figure class="ch-art">
+        <img src="assets/img/01-kaltes-kupfer.webp" alt="Handgemalte Szene: Ein Mensch der Jungsteinzeit kniet an einem Flussufer und klopft mit einem Hammerstein ein kleines Kupferstück auf einem flachen Felsen, daneben liegen Perlen und eine Ahle." loading="lazy">
+        <button class="spot" style="--x: 57%; --y: 84%;" popovertarget="spot-1-1" aria-label="Detail über die ältesten Kupferperlen öffnen"></button>
+        <div class="spot-card" id="spot-1-1" popover>Die Kupferperlen und Ahlen von Çayönü Tepesi (Türkei) sind rund 10.000 Jahre alt — älter als die Töpferscheibe und das Rad.</div>
+        <button class="spot" style="--x: 38%; --y: 55%;" popovertarget="spot-1-2" aria-label="Detail über das Weichglühen öffnen"></button>
+        <div class="spot-card" id="spot-1-2" popover>Zu langes Hämmern macht Kupfer spröde. Die Lösung: kurz ins Feuer legen, dann wird es wieder weich. Dieses <em>Weichglühen</em> ist die älteste metallurgische Erfindung überhaupt.</div>
+      </figure>
+      <div class="ch-body">
+        <p>Ein Stein, der nicht bricht, sondern sich biegt — den Menschen der Jungsteinzeit muss das wie Zauberei erschienen sein. Mit Hammersteinen klopften sie das weiche Metall kalt in Form: Perlen, Nadeln, kleine Haken. Kein Feuer, keine Schmelze — reines Handwerk mit einem wundersamen Material, das sich verhielt wie kein anderes.</p>
+        <p>Doch das kalte Schmieden hat eine Grenze: Mit jedem Schlag wird Kupfer härter und irgendwann rissig. Die Entdeckung, dass Feuer es wieder geschmeidig macht, war der erste Schritt in eine neue Welt — der Mensch begann, das Gefüge des Metalls selbst zu verändern, lange bevor er wusste, dass es so etwas gibt.</p>
+        <aside class="margin-note">Auch <em>Meteoreisen</em> wurde früh verarbeitet — die Ägypter nannten es „Eisen vom Himmel". Der Dolch des Tutanchamun (um 1325 v. Chr.) besteht daraus.</aside>
+      </div>
+    </section>
+
+    <section class="chapter" id="kap-2" data-chapter="2" data-year-start="-5000" data-year-end="-3300" style="--epoch: var(--e2); --epoch-soft: var(--e2-soft); --wonk: 1; --soft: 88;">
+      <header class="ch-head">
+        <p class="ch-kicker"><span class="ch-num">Kapitel 2</span><span class="ch-range">um 5000 – 3300 v. Chr.</span></p>
+        <h2 class="ch-title">Das erste Schmelzfeuer</h2>
+        <p class="ch-lead">Auf dem Balkan wagten Menschen vor rund 7.000 Jahren den entscheidenden Schritt: Sie holten das Metall mit Feuer aus dem Stein — die <button class="term" popovertarget="g-verhuetten">Verhüttung</button> war erfunden.</p>
+      </header>
+      <figure class="ch-art">
+        <img src="assets/img/02-schmelzfeuer.webp" alt="Handgemalte Szene: Zwei Menschen der Vinča-Kultur hocken an einem kleinen glühenden Lehmofen, einer bläst durch ein Rohr in die Glut, aus grünem Malachit tropft erstes flüssiges Kupfer in eine Tonform." loading="lazy">
+        <button class="spot" style="--x: 45%; --y: 63%;" popovertarget="spot-2-1" aria-label="Detail über die Schmelztemperatur öffnen"></button>
+        <div class="spot-card" id="spot-2-1" popover>Kupfer schmilzt bei 1.083&nbsp;°C — ein offenes Lagerfeuer erreicht kaum 700&nbsp;°C. Erst Holzkohle und kräftiges Blasen durch Rohre machten den Unterschied.</div>
+        <button class="spot" style="--x: 13%; --y: 80%;" popovertarget="spot-2-2" aria-label="Detail über Malachit öffnen"></button>
+        <div class="spot-card" id="spot-2-2" popover>Malachit, das leuchtend grüne Kupfererz, war vorher Schmuckstein und Lidschatten-Pigment. Dann entdeckte jemand, was in ihm steckt.</div>
+      </figure>
+      <div class="ch-body">
+        <p>In Belovode, einer Siedlung der Vinča-Kultur im heutigen Serbien, fanden Archäologen die ältesten bekannten Spuren der Kupferverhüttung — rund 7.000 Jahre alt. Aus grünem Malachit wurde in kleinen, kaum blumentopfgroßen Öfen flüssiges Metall. Und flüssiges Metall lässt sich <em>gießen</em>: In Formen aus Stein und Ton entstanden Beile, Meißel und Schmuck in Serie.</p>
+        <p>Wie kostbar das neue Material war, zeigt der berühmteste Mann der Kupferzeit: Ötzi trug um 3300 v. Chr. ein Beil aus fast reinem Kupfer bei sich — vermutlich sein wertvollster Besitz und ein Zeichen von Rang.</p>
+        <aside class="margin-note">Die Kupferzeit trägt viele Namen: Chalkolithikum, Äneolithikum — wörtlich „Kupfersteinzeit", weil Stein und Metall noch nebeneinander lebten.</aside>
+      </div>
+    </section>
+
+    <aside class="artefact" aria-label="Artefakt: Das Beil vom Similaun">
+      <figure class="artefact-card">
+        <img src="assets/img/vignette-oetzi-beil.webp" alt="Handgemalte Vignette: Ötzis Kupferbeil mit knieförmigem Holzschaft aus Eibe, Birkenpech und Lederriemen, die kleine trapezförmige Kupferklinge glänzt rötlich." loading="lazy">
+        <figcaption>
+          <span class="artefact-year">um 3300 v. Chr.</span>
+          <strong>Das Beil vom Similaun</strong>
+          <p>Das einzige vollständig erhaltene Kupferzeit-Beil Europas: Klinge aus südtoskanischem Kupfer, Schaft aus Eibenholz, gebunden mit Birkenpech und Leder. Gefunden 1991 beim Mann aus dem Eis.</p>
+        </figcaption>
+      </figure>
+    </aside>
+
+    <section class="chapter" id="kap-3" data-chapter="3" data-year-start="-3300" data-year-end="-1200" style="--epoch: var(--e3); --epoch-soft: var(--e3-soft); --wonk: 1; --soft: 75;">
+      <header class="ch-head">
+        <p class="ch-kicker"><span class="ch-num">Kapitel 3</span><span class="ch-range">um 3300 – 1200 v. Chr.</span></p>
+        <h2 class="ch-title">Die Bronzezeit</h2>
+        <p class="ch-lead">Dann entdeckte jemand: Mischt man Kupfer mit einem Anteil Zinn, entsteht etwas Neues — härter, gießfreudiger, goldglänzend. Die erste bewusst geschaffene <button class="term" popovertarget="g-legierung">Legierung</button>.</p>
+      </header>
+      <figure class="ch-art">
+        <img src="assets/img/03-bronzezeit.webp" alt="Handgemalte Szene: Eine Gießerei der Bronzezeit — ein Gießer füllt glühende Bronze aus einem Tontiegel in eine zweiteilige Steinform für ein Schwert, im Hintergrund hängen fertige Sicheln und ein Händler bringt Zinnbarren." loading="lazy">
+        <button class="spot" style="--x: 66%; --y: 55%;" popovertarget="spot-3-1" aria-label="Detail über den Zinnhandel öffnen"></button>
+        <div class="spot-card" id="spot-3-1" popover>Zinn ist selten. Es reiste aus Cornwall oder Zentralasien über 1.500 Kilometer bis in die Werkstätten des Mittelmeers — die Bronzezeit war das erste Zeitalter globaler Lieferketten.</div>
+        <button class="spot" style="--x: 12%; --y: 15%;" popovertarget="spot-3-2" aria-label="Detail über das Wachsausschmelzverfahren öffnen"></button>
+        <div class="spot-card" id="spot-3-2" popover>Für filigrane Formen: ein Modell aus Wachs, ummantelt mit Ton, das Wachs ausgeschmolzen, der Hohlraum mit Bronze gefüllt. Dieses <em>Wachsausschmelzverfahren</em> nutzt der Kunstguss bis heute.</div>
+      </figure>
+      <div class="ch-body">
+        <p>Bronze — etwa neun Teile Kupfer, ein Teil Zinn — veränderte alles. Sie ist deutlich härter als Kupfer und lässt sich hervorragend gießen. Aus ihr wurden Schwerter und Sicheln, Trompeten und Kessel, ganze Statuen. Weil das nötige Zinn nur an wenigen Orten der Welt vorkommt, spannten sich Handelsrouten über Kontinente; mit dem Metall reisten Ideen, Schrift und Macht.</p>
+        <p>Und Wissen: Die Himmelsscheibe von Nebra, um 1600 v. Chr. in Mitteldeutschland vergraben, gilt als älteste bekannte konkrete Himmelsdarstellung der Welt — gegossene Bronze, belegt mit Gold. Metall war nicht mehr nur Werkzeug. Es wurde Gedächtnis.</p>
+        <aside class="margin-note">„Bronzezeit" ist keine Redensart: Wir teilen ganze Weltalter nach ihrem Leitmetall ein — bis heute.</aside>
+      </div>
+    </section>
+
+    <aside class="artefact" aria-label="Artefakt: Die Himmelsscheibe von Nebra">
+      <figure class="artefact-card">
+        <img src="assets/img/vignette-nebra-scheibe.webp" alt="Handgemalte Vignette: Die Himmelsscheibe von Nebra — tiefblau-grün patinierte Bronzescheibe mit goldener Sonnenbarke, Mondsichel und dem Sternhaufen der Plejaden." loading="lazy">
+        <figcaption>
+          <span class="artefact-year">um 1600 v. Chr.</span>
+          <strong>Die Himmelsscheibe von Nebra</strong>
+          <p>2,3 Kilogramm Bronze, tauschiert mit Gold aus Cornwall: Sonnenbarke, Mond und die Plejaden. UNESCO-Weltdokumentenerbe — und ein Beweis, wie präzise Bronzegießer vor 3.600 Jahren arbeiteten.</p>
+        </figcaption>
+      </figure>
+    </aside>
+
+    <section class="chapter" id="kap-4" data-chapter="4" data-year-start="-1200" data-year-end="-800" style="--epoch: var(--e4); --epoch-soft: var(--e4-soft); --wonk: 1; --soft: 62;">
+      <header class="ch-head">
+        <p class="ch-kicker"><span class="ch-num">Kapitel 4</span><span class="ch-range">um 1200 – 800 v. Chr.</span></p>
+        <h2 class="ch-title">Das Eisen</h2>
+        <p class="ch-lead">Eisenerz gibt es fast überall — aber Eisen schmilzt erst bei 1.538 Grad, unerreichbar für die Öfen der Antike. Der Ausweg hieß <button class="term" popovertarget="g-rennofen">Rennofen</button>.</p>
+      </header>
+      <figure class="ch-art">
+        <img src="assets/img/04-eisenzeit.webp" alt="Handgemalte Szene: Ein mannshoher Rennofen aus Lehm glüht in der Abenddämmerung, zwei Schmiede brechen ihn auf und ziehen mit Zangen die glühende Luppe heraus, Funken stieben." loading="lazy">
+        <button class="spot" style="--x: 49%; --y: 53%;" popovertarget="spot-4-1" aria-label="Detail über die Luppe öffnen"></button>
+        <div class="spot-card" id="spot-4-1" popover>Die <em>Luppe</em>: ein glühender, schwammartiger Klumpen aus Eisen und Schlacke — die Ausbeute von Stunden Ofenarbeit, oft kaum größer als eine Faust. Erst kraftvolles Ausschmieden treibt die Schlacke heraus.</div>
+        <button class="spot" style="--x: 72%; --y: 86%;" popovertarget="spot-4-2" aria-label="Detail über die späte Eisenzeit öffnen"></button>
+        <div class="spot-card" id="spot-4-2" popover>Warum kam Eisen so spät, obwohl es viel häufiger ist als Kupfer? Weil es schwieriger ist: Es wird nicht flüssig, verzeiht keine Fehler — und verlangt das Schmieden.</div>
+      </figure>
+      <div class="ch-body">
+        <p>Im Rennofen aus Lehm wird Eisenerz mit Holzkohle nicht geschmolzen, sondern chemisch <em>reduziert</em>: Der Kohlenstoff entreißt dem Erz den Sauerstoff. Was bleibt, ist keine blanke Schmelze, sondern die Luppe — und aus ihr macht erst der Hammer brauchbares Eisen. Nicht der Gießer, der Schmied wurde zur Schlüsselfigur des neuen Zeitalters.</p>
+        <p>Als um 1200 v. Chr. die Handelsnetze der Bronzezeit zusammenbrachen und Zinn knapp wurde, war das lokal verfügbare Eisen zur Stelle. Es demokratisierte das Metall: Zum ersten Mal konnte sich fast jedes Dorf gute Äxte, Pflugscharen und Messer leisten.</p>
+        <aside class="margin-note">Die Hethiter galten lange als „Erfinder" des Eisens. Heute weiß man: Viele Regionen — von Anatolien bis Westafrika — fanden unabhängig voneinander den Weg zum Eisen.</aside>
+      </div>
+    </section>
+
+    <section class="chapter" id="kap-5" data-chapter="5" data-year-start="-800" data-year-end="500" style="--epoch: var(--e5); --epoch-soft: var(--e5-soft); --wonk: 0; --soft: 50;">
+      <header class="ch-head">
+        <p class="ch-kicker"><span class="ch-num">Kapitel 5</span><span class="ch-range">um 800 v. Chr. – 500 n. Chr.</span></p>
+        <h2 class="ch-title">Stahl der Antike</h2>
+        <p class="ch-lead">Reines Eisen ist weich. Erst mit einer Prise Kohlenstoff, aufgenommen aus der Holzkohle der Esse, wird daraus Stahl — auch wenn das damals niemand so nennen konnte.</p>
+      </header>
+      <figure class="ch-art">
+        <img src="assets/img/05-antiker-stahl.webp" alt="Handgemalte Szene: Eine antike Schmiede — der Meister taucht eine glühende Klinge zischend ins Wasserbecken, Dampf steigt auf, an der Wand lehnen genormte römische Werkzeuge, ein Gehilfe trägt einen Wootz-Barren herbei." loading="lazy">
+        <button class="spot" style="--x: 47%; --y: 74%;" popovertarget="spot-5-1" aria-label="Detail über das Härten öffnen"></button>
+        <div class="spot-card" id="spot-5-1" popover>Härten: Glühender Stahl, in Wasser getaucht, wird schlagartig hart — aber spröde. Vorsichtiges Wiedererwärmen, das <em>Anlassen</em>, nimmt ihm die Spannung. Schon Homer beschreibt das Zischen einer abgeschreckten Axt.</div>
+        <button class="spot" style="--x: 66%; --y: 60%;" popovertarget="spot-5-2" aria-label="Detail über Wootz öffnen"></button>
+        <div class="spot-card" id="spot-5-2" popover>In Indien entstand ab etwa 300 v. Chr. <button class="term" popovertarget="g-tiegelstahl">Tiegelstahl</button> namens Wootz — Barren von legendärer Qualität, gehandelt bis nach Damaskus.</div>
+      </figure>
+      <div class="ch-body">
+        <p>Antike Schmiede beherrschten durch reine Erfahrung, was die Chemie erst im 19. Jahrhundert erklären konnte: <em>Aufkohlen</em> im Feuer, <em>Härten</em> im Wasser, <em>Anlassen</em> für die Zähigkeit. Drei Handgriffe, über Generationen verfeinert — der Unterschied zwischen einer Klinge, die schartig wird, und einer, die Jahrzehnte hält.</p>
+        <p>Rom wiederum machte Metall zur Massenware: Staatliche <em>fabricae</em> rüsteten ganze Legionen mit genormten Waffen und Werkzeugen aus, und in Minen wie Rio Tinto wurde Erz in industriellem Maßstab gefördert. Qualität aus Erfahrung, Menge aus Organisation — die Antike konnte beides.</p>
+        <aside class="margin-note">„Stahl" ist schlicht Eisen mit 0,2 bis 2 Prozent Kohlenstoff. Weniger: weiches Schmiedeeisen. Mehr: sprödes Gusseisen.</aside>
+      </div>
+    </section>
+
+    <aside class="artefact" aria-label="Artefakt: Damaszener Stahl">
+      <figure class="artefact-card">
+        <img src="assets/img/vignette-damaszener.webp" alt="Handgemalte Vignette: Nahaufnahme einer Damaszener-Klinge, deren Oberfläche wolkige, wasserartige helle und dunkle Linien durchziehen." loading="lazy">
+        <figcaption>
+          <span class="artefact-year">ab ca. 300 v. Chr.</span>
+          <strong>Das Muster von Damaskus</strong>
+          <p>Karbidbänder zeichnen Wasserlinien in Klingen aus indischem Wootz-Stahl. Das genaue Wissen ging im 18. Jahrhundert verloren — Metallurgen rekonstruieren es bis heute.</p>
+        </figcaption>
+      </figure>
+    </aside>
+
+    <section class="chapter" id="kap-6" data-chapter="6" data-year-start="500" data-year-end="1500" style="--epoch: var(--e6); --epoch-soft: var(--e6-soft); --wonk: 0; --soft: 38;">
+      <header class="ch-head">
+        <p class="ch-kicker"><span class="ch-num">Kapitel 6</span><span class="ch-range">500 – 1500</span></p>
+        <h2 class="ch-title">Die Schmiede des Mittelalters</h2>
+        <p class="ch-lead">Im Mittelalter wurde die Schmiede zum Herzen jedes Dorfes — und das Wasserrad zum ersten Maschinenantrieb der Metallgeschichte.</p>
+      </header>
+      <figure class="ch-art">
+        <img src="assets/img/06-mittelalter-schmiede.webp" alt="Handgemalte Szene: Eine mittelalterliche Hammerschmiede am Bach — das Wasserrad treibt einen mächtigen Schwanzhammer, der Meister führt das glühende Werkstück, Funken fliegen durch die dunkle Werkstatt, an der Wand ein halbfertiger Harnisch." loading="lazy">
+        <button class="spot" style="--x: 40%; --y: 45%;" popovertarget="spot-6-1" aria-label="Detail über Wasserhämmer öffnen"></button>
+        <div class="spot-card" id="spot-6-1" popover>Ein wassergetriebener Schwanzhammer schlug bis zu 120 Mal pro Minute, mit Zentnern von Kraft — kein Schmiedearm hält das durch. Muskelkraft hatte Konkurrenz bekommen.</div>
+        <button class="spot" style="--x: 53%; --y: 58%;" popovertarget="spot-6-2" aria-label="Detail über die Katana-Härtelinie öffnen"></button>
+        <div class="spot-card" id="spot-6-2" popover>Japans Schwertschmiede falteten Tamahagane-Stahl vielfach und trugen vor dem Härten Lehm auf: dünn an der Schneide, dick am Rücken. So härtet nur die Schneide voll aus — sichtbar als geschwungene Härtelinie, das <em>Hamon</em>.</div>
+        <button class="spot" style="--x: 87%; --y: 42%;" popovertarget="spot-6-3" aria-label="Detail über Plattenrüstungen öffnen"></button>
+        <div class="spot-card" id="spot-6-3" popover>Eine Plattenrüstung um 1450 wog 20 bis 25 Kilogramm, verteilt über den ganzen Körper — weniger, als heutige Infanterie oft trägt. Ihre Träger konnten rennen und aufs Pferd steigen.</div>
+      </figure>
+      <div class="ch-body">
+        <p>Wasserräder hoben tonnenschwere Hämmer und pressten mannshohe Blasebälge — Arbeit, für die zuvor Dutzende Arme nötig waren. Zünfte ordneten das Wissen in Berufe: Waffenschmiede, Nagelschmiede, Kesselschmiede, jede Kunst mit eigenen Geheimnissen, Lehrjahren und Meisterstücken.</p>
+        <p>Und die Öfen wuchsen. Mit wassergetriebenem Gebläse wurden sie ab dem 12. Jahrhundert erstmals so heiß, dass Eisen flüssig aus ihnen floss: Der Hochofen war geboren. Sein Gusseisen füllte Formen zu Ofenplatten, Töpfen — und bald Kanonen. Am Ende des Mittelalters war Metall keine Kostbarkeit mehr, sondern Infrastruktur.</p>
+        <aside class="margin-note">Der Katana-Aufbau — harter Stahl außen, weicher Kern innen — ist Verbundwerkstoff-Denken, 800 Jahre bevor es den Begriff gab.</aside>
+      </div>
+    </section>
+
+    <section class="chapter" id="kap-7" data-chapter="7" data-year-start="1709" data-year-end="1886" style="--epoch: var(--e7); --epoch-soft: var(--e7-soft); --wonk: 0; --soft: 25;">
+      <header class="ch-head">
+        <p class="ch-kicker"><span class="ch-num">Kapitel 7</span><span class="ch-range">1709 – 1900</span></p>
+        <h2 class="ch-title">Die industrielle Revolution</h2>
+        <p class="ch-lead">1709 gelang es Abraham Darby, Eisen mit <button class="term" popovertarget="g-koks">Koks</button> statt Holzkohle zu erschmelzen — der Anfang der Kettenreaktion, die unsere Welt aus Stahl baute.</p>
+      </header>
+      <figure class="ch-art">
+        <img src="assets/img/07-industrielle-revolution.webp" alt="Handgemalte Szene: Ein Stahlwerk des 19. Jahrhunderts bei Nacht — eine kippende Bessemer-Birne speit eine Fontäne weißer Funken, winzige Arbeiter mit Schutzhüten davor, im Hintergrund Schlote und ein Eisenbahnviadukt." loading="lazy">
+        <button class="spot" style="--x: 72%; --y: 58%;" popovertarget="spot-7-1" aria-label="Detail über die Bessemer-Birne öffnen"></button>
+        <div class="spot-card" id="spot-7-1" popover>Die Bessemer-Birne: Pressluft, von unten durch tonnenweise flüssiges Roheisen geblasen, verbrennt den überschüssigen Kohlenstoff. Stahl in 20 Minuten statt in Tagen — Zeitgenossen beschrieben es als künstlichen Vulkan.</div>
+        <button class="spot" style="--x: 20%; --y: 52%;" popovertarget="spot-7-2" aria-label="Detail über den Eiffelturm öffnen"></button>
+        <div class="spot-card" id="spot-7-2" popover>Der Eiffelturm (1889) besteht aus über 18.000 genieteten Einzelteilen — aus Puddeleisen, nicht aus Stahl. Der neue Werkstoff war Gustave Eiffel für sein Jahrhundertbauwerk noch zu wenig erprobt.</div>
+      </figure>
+      <div class="ch-body">
+        <p>Koks aus Steinkohle befreite die Eisenhütten von den Wäldern, und die Öfen wuchsen zu Giganten. Henry Corts Puddelverfahren (1784) rührte Roheisen mühsam zu schmiedbarem Eisen; dann kam 1856 Henry Bessemers Geniestreich, der Stahl von der Kostbarkeit zur Massenware machte: Binnen fünfzig Jahren fiel sein Preis auf etwa ein Sechstel.</p>
+        <p>Aus dem plötzlich billigen Stahl entstanden Schienen und Brücken, Dampfkessel und Schiffsrümpfe, die Skelette ganzer Städte. Zum ersten Mal formte nicht mehr der Schmied das Metall — sondern das Metall die Welt.</p>
+        <aside class="margin-note">1855, ein Jahr vor Bessemers Patent, produzierte die Welt rund 60.000 Tonnen Stahl im Jahr. 1900 waren es 28 Millionen.</aside>
+      </div>
+    </section>
+
+    <section class="chapter" id="kap-8" data-chapter="8" data-year-start="1886" data-year-end="2000" style="--epoch: var(--e8); --epoch-soft: var(--e8-soft); --wonk: 0; --soft: 12;">
+      <header class="ch-head">
+        <p class="ch-kicker"><span class="ch-num">Kapitel 8</span><span class="ch-range">1886 – 2000</span></p>
+        <h2 class="ch-title">Das Jahrhundert der Legierungen</h2>
+        <p class="ch-lead">Das 20. Jahrhundert fragte nicht mehr nur „Wie mache ich Metall?", sondern: „Welches Metall erfinde ich für genau diesen Zweck?"</p>
+      </header>
+      <figure class="ch-art">
+        <img src="assets/img/08-legierungen.webp" alt="Handgemalte Szene: Eine Elektrolyse-Halle mit dampfenden Aluminium-Zellen, davor auf einem Zeichentisch Blaupausen eines Düsentriebwerks, eine glänzende Turbinenschaufel und Bleche aus Edelstahl, die kühles Licht spiegeln." loading="lazy">
+        <button class="spot" style="--x: 70%; --y: 38%;" popovertarget="spot-8-1" aria-label="Detail über Aluminium und Energie öffnen"></button>
+        <div class="spot-card" id="spot-8-1" popover><button class="term" popovertarget="g-elektrolyse">Elektrolyse</button> braucht Strom im Überfluss: Aluminiumhütten entstanden direkt an Wasserkraftwerken. Seither folgt die Metallurgie dem Energiepreis um die Welt.</div>
+        <button class="spot" style="--x: 83%; --y: 66%;" popovertarget="spot-8-2" aria-label="Detail über Edelstahl öffnen"></button>
+        <div class="spot-card" id="spot-8-2" popover>Rostfreier Stahl (ab 1912/13, fast zeitgleich in Sheffield und Essen entwickelt): Mindestens 10,5&nbsp;% Chrom bilden eine unsichtbare Oxidschicht, die sich bei Kratzern von selbst erneuert.</div>
+        <button class="spot" style="--x: 52%; --y: 55%;" popovertarget="spot-8-3" aria-label="Detail über Superlegierungen öffnen"></button>
+        <div class="spot-card" id="spot-8-3" popover>Turbinenschaufeln moderner Triebwerke arbeiten in Gas, das heißer ist als der Schmelzpunkt ihrer eigenen Legierung — gerettet von haarfeinen Kühlluftkanälen und keramischer Beschichtung.</div>
+      </figure>
+      <div class="ch-body">
+        <p>1886 entriegelten Charles Martin Hall und Paul Héroult — unabhängig voneinander, im selben Jahr, beide 22 Jahre alt — per Elektrolyse das Aluminium. Ein Metall, das kurz zuvor teurer war als Silber (der Legende nach ließ Napoleon III. nur Ehrengäste von Aluminiumtellern speisen), wurde zu Flugzeugrumpf und Alltagsfolie.</p>
+        <p>Dann ging es Schlag auf Schlag: rostfreier Stahl, Elektroschweißen statt Nieten, Titan für Luftfahrt und Medizin, Superlegierungen im Glutherz der Düsentriebwerke. Metallurgie wurde Wissenschaft — der Röntgenblick ins Kristallgitter ersetzte das Erfahrungswissen der Esse. Und mit dem Fließband wurde Metall so alltäglich, dass wir aufhörten, es zu bemerken.</p>
+        <aside class="margin-note">Am Ende des Jahrhunderts steckten in einem gewöhnlichen Auto über 20 verschiedene Metalle und Legierungen — vom Karosseriestahl bis zum Platin im Katalysator.</aside>
+      </div>
+    </section>
+
+    <section class="chapter" id="kap-9" data-chapter="9" data-year-start="2000" data-year-end="2026" style="--epoch: var(--e9); --epoch-soft: var(--e9-soft); --wonk: 0; --soft: 0;">
+      <header class="ch-head">
+        <p class="ch-kicker"><span class="ch-num">Kapitel 9</span><span class="ch-range">2000 – heute</span></p>
+        <h2 class="ch-title">Präzision und Zukunft</h2>
+        <p class="ch-lead">Heute formt der Mensch Metall mit Licht: Laser schneiden Bleche wie Papier — und Drucker bauen Bauteile Schicht für Schicht aus Metallpulver auf.</p>
+      </header>
+      <figure class="ch-art">
+        <img src="assets/img/09-praezision-zukunft.webp" alt="Handgemalte Szene: Ein helles, ruhiges Labor — im Bauraum eines 3D-Metalldruckers zeichnet ein feiner Laserpunkt leuchtende Bahnen in Titanpulver, daneben wächst ein filigranes Gitterbauteil, eine Ingenieurin beobachtet den Prozess." loading="lazy">
+        <button class="spot" style="--x: 30%; --y: 58%;" popovertarget="spot-9-1" aria-label="Detail über den 3D-Metalldruck öffnen"></button>
+        <div class="spot-card" id="spot-9-1" popover>Im Laser-Pulverbett verschmilzt der Strahl Metallpulver in Schichten, dünner als ein Haar. So entstehen Formen, die kein Gussmeister je entformen könnte: Triebwerksdüsen, Hüftgelenke, bionische Gitter.</div>
+        <button class="spot" style="--x: 88%; --y: 38%;" popovertarget="spot-9-2" aria-label="Detail über grünen Stahl öffnen"></button>
+        <div class="spot-card" id="spot-9-2" popover>Stahlproduktion verursacht rund 7 bis 8&nbsp;% des weltweiten CO₂. Der Ausweg: <button class="term" popovertarget="g-direktreduktion">Direktreduktion</button> mit grünem Wasserstoff — das schwedische HYBRIT-Projekt lieferte 2021 den ersten fossilfrei erzeugten Stahl. Abgas: Wasserdampf.</div>
+        <button class="spot" style="--x: 80%; --y: 88%;" popovertarget="spot-9-3" aria-label="Detail über Recycling öffnen"></button>
+        <div class="spot-card" id="spot-9-3" popover>Metall ist der Kreislauf-Werkstoff schlechthin: beliebig oft einschmelzbar ohne Qualitätsverlust. Rund drei Viertel allen jemals erzeugten Aluminiums sind bis heute in Gebrauch.</div>
+      </figure>
+      <div class="ch-body">
+        <p>CNC-Maschinen fräsen auf den tausendstel Millimeter, Laser schneiden und schweißen berührungslos, und die additive Fertigung kehrt das Prinzip des Werkzeugs um: Nicht mehr wegnehmen, sondern aufbauen — nur dort Material, wo Kräfte fließen. Leichter, fester, verschwendungsfreier.</p>
+        <p>Zugleich kehrt die älteste aller Fragen zurück: Woher nehmen? Die Antwort der Zukunft liegt im Kreislauf und im sauberen Feuer — Schrott wird Rohstoff, Wasserstoff ersetzt die Kohle. Nach 11.000 Jahren schließt sich der Kreis: Wieder verändert der Mensch sein Feuer, um das Metall zu verwandeln.</p>
+        <aside class="margin-note">Der Elektrolichtbogenofen, der heute Schrott recycelt, wird mit Ökostrom selbst zum „grünen Feuer" — die Esse der Zukunft ist elektrisch.</aside>
+      </div>
+    </section>
+
+    <section class="epilog" data-year-start="2026" data-year-end="2026">
+      <p class="epilog-text">Elftausend Jahre — vom Klopfen am Flussufer bis zum Laserstrahl im Titanpulver. Und jedes Werkstück begann gleich: mit einem Menschen, der ein Stück Erde ins Feuer hielt und sich fragte, was daraus werden könnte.</p>
+      <details class="sources">
+        <summary>Quellen und Weiterlesen</summary>
+        <ul>
+          <li><a href="https://de.wikipedia.org/wiki/Kupfersteinzeit" rel="noopener">Kupfersteinzeit</a> · <a href="https://de.wikipedia.org/wiki/Bronzezeit" rel="noopener">Bronzezeit</a> · <a href="https://de.wikipedia.org/wiki/Eisenzeit" rel="noopener">Eisenzeit</a> — Wikipedia-Überblicke zu den Epochen</li>
+          <li><a href="https://de.wikipedia.org/wiki/Rennofen" rel="noopener">Rennofen</a> · <a href="https://de.wikipedia.org/wiki/Bessemer-Verfahren" rel="noopener">Bessemer-Verfahren</a> · <a href="https://de.wikipedia.org/wiki/Hall-H%C3%A9roult-Prozess" rel="noopener">Hall-Héroult-Prozess</a> — Schlüsseltechniken</li>
+          <li><a href="https://www.landesmuseum-vorgeschichte.de/himmelsscheibe-von-nebra" rel="noopener">Himmelsscheibe von Nebra</a> — Landesmuseum für Vorgeschichte, Halle</li>
+          <li><a href="https://www.iceman.it/de/das-beil/" rel="noopener">Ötzis Kupferbeil</a> — Südtiroler Archäologiemuseum</li>
+          <li><a href="https://www.hybritdevelopment.se/en/" rel="noopener">HYBRIT</a> — fossilfreier Stahl mit Wasserstoff</li>
+          <li><a href="https://www.bergbaumuseum.de" rel="noopener">Deutsches Bergbau-Museum Bochum</a> — Forschung zur Archäometallurgie</li>
+        </ul>
+      </details>
+      <p class="colophon">Illustrationen: mit Codex generierte Bilder im Stil handgemalter Gouache. Seite handgefertigt mit HTML, CSS und ein wenig JavaScript — ohne Framework, wie ein gutes Werkstück. 2026.</p>
+    </section>
+
+  </main>
+
+  <div class="gloss-card" id="g-gediegen" popover><strong>gediegen</strong> — in reiner, metallischer Form in der Natur vorkommend. Nur Gold, Silber, Kupfer und Meteoreisen waren für frühe Menschen so direkt greifbar.</div>
+  <div class="gloss-card" id="g-verhuetten" popover><strong>Verhüttung</strong> — Erz wird mit Hitze und Holzkohle chemisch zerlegt, bis sich das Metall vom Gestein trennt. Der Grundvorgang aller Metallgewinnung.</div>
+  <div class="gloss-card" id="g-legierung" popover><strong>Legierung</strong> — eine Mischung aus einem Metall und mindestens einem weiteren Element. Die Eigenschaften der Mischung übertreffen oft beide Zutaten.</div>
+  <div class="gloss-card" id="g-rennofen" popover><strong>Rennofen</strong> — schachtförmiger Lehmofen der Eisenzeit. Der Name kommt vom „Rinnen" der flüssigen Schlacke; das Eisen selbst bleibt fest.</div>
+  <div class="gloss-card" id="g-tiegelstahl" popover><strong>Tiegelstahl</strong> — Stahl, der in einem geschlossenen Tontiegel erschmolzen wird. Ergibt ein besonders gleichmäßiges Gefüge — die Grundlage des legendären Wootz.</div>
+  <div class="gloss-card" id="g-koks" popover><strong>Koks</strong> — Steinkohle, unter Luftabschluss ausgeglüht. Brennt heißer und reiner als Kohle und trägt das Gewicht hoher Öfen, ohne zusammenzusacken.</div>
+  <div class="gloss-card" id="g-elektrolyse" popover><strong>Elektrolyse</strong> — elektrischer Strom zerlegt eine Schmelze oder Lösung in ihre Bestandteile. Für Aluminium: der einzige Weg, das Metall aus seinem Oxid zu befreien.</div>
+  <div class="gloss-card" id="g-direktreduktion" popover><strong>Direktreduktion</strong> — Eisenerz wird ohne Hochofen im festen Zustand reduziert, klassisch mit Erdgas, künftig mit Wasserstoff. Das Ergebnis heißt Eisenschwamm.</div>
+
+</body>
+</html>

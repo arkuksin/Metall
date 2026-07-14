@@ -1,0 +1,9 @@
+# Master-Bilder (nur WebP wird deployed)
+assets/img/*.png
+assets/img/*.svg
+
+# System
+.DS_Store
+
+# Claude Code / Editor
+.claude/
