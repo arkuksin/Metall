@@ -220,7 +220,7 @@
 
   if (motionOK) {
     const revealables = document.querySelectorAll(
-      ".ch-head, .ch-body, .artefact-card, .epilog-text"
+      ".ch-head, .ch-body, .artefact-card, .tech-card, .epilog-text"
     );
     const io = new IntersectionObserver(
       (entries) => {

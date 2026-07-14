@@ -635,6 +635,143 @@ img { max-width: 100%; display: block; }
   color: var(--epoch-active);
 }
 
+/* ---------- Werkbank: Technikblätter (parallele Reihe) ----------
+   Zweite Bildsprache der Seite: Buntstift-Studienblätter neben den
+   Gouache-Szenen. Gestrichelte Ränder und wacklige Kreisnummern
+   zitieren den Stift, ohne ihn zu imitieren. */
+
+.tech {
+  padding: 1rem var(--pad-x) 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.tech-card {
+  margin: 0;
+  width: min(60rem, 100%);
+  padding: 1.5rem 1.7rem 1.4rem;
+  background: var(--card);
+  border: 1.5px dashed color-mix(in oklab, var(--epoch) 50%, transparent);
+  border-radius: 14px 10px 12px 16px;
+  rotate: 0.4deg;
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  grid-template-areas:
+    "head head"
+    "art  steps"
+    "art  fact";
+  column-gap: clamp(1.4rem, 3vw, 2.4rem);
+  row-gap: 1rem;
+  align-items: start;
+}
+
+.tech-head { grid-area: head; }
+
+.tech-kicker {
+  margin: 0 0 0.3rem;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--epoch);
+  display: inline-flex; align-items: center; gap: 0.55rem;
+}
+.tech-kicker::before {
+  content: "";
+  width: 1.9rem;
+  border-top: 2px dashed currentColor;
+  rotate: -1.5deg;
+}
+
+.tech-title {
+  margin: 0;
+  font-size: clamp(1.25rem, 2.4vw, 1.55rem);
+  font-weight: 560;
+  line-height: 1.25;
+  letter-spacing: -0.005em;
+  text-wrap: balance;
+}
+
+.tech-art {
+  grid-area: art;
+  margin: 0;
+  align-self: start;
+}
+.tech-art img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px 14px 10px 12px;
+  border: 1px solid var(--line);
+  rotate: -0.5deg;
+}
+
+.tech-steps {
+  grid-area: steps;
+  list-style: none;
+  counter-reset: step;
+  margin: 0.2rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.8rem;
+}
+.tech-steps li {
+  counter-increment: step;
+  position: relative;
+  padding-inline-start: 2.35rem;
+  font-size: 0.96rem;
+  line-height: 1.6;
+  text-wrap: pretty;
+}
+.tech-steps li::before {
+  content: counter(step);
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0.05em;
+  width: 1.5rem; height: 1.5rem;
+  display: grid; place-items: center;
+  border: 1.6px solid var(--epoch);
+  color: var(--epoch);
+  font-family: var(--font-sans);
+  font-size: 0.76rem;
+  font-weight: 620;
+}
+/* Jede Nummer ein wenig anders rund — wie mit dem Stift gezogen */
+.tech-steps li:nth-child(1)::before { border-radius: 55% 45% 52% 48% / 47% 56% 44% 53%; rotate: -4deg; }
+.tech-steps li:nth-child(2)::before { border-radius: 46% 54% 44% 56% / 55% 45% 55% 45%; rotate: 3deg; }
+.tech-steps li:nth-child(3)::before { border-radius: 52% 48% 55% 45% / 45% 52% 48% 55%; rotate: -2deg; }
+.tech-steps li:nth-child(4)::before { border-radius: 49% 51% 47% 53% / 52% 47% 53% 48%; rotate: 5deg; }
+
+.tech-fact {
+  grid-area: fact;
+  margin: 0;
+  padding-top: 0.85rem;
+  border-top: 1.5px dashed color-mix(in oklab, var(--epoch) 40%, transparent);
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+}
+.tech-fact-num {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--epoch);
+  white-space: nowrap;
+  flex: none;
+}
+
+@media (max-width: 900px) {
+  .tech-card {
+    grid-template-columns: 1fr;
+    grid-template-areas: "head" "art" "steps" "fact";
+  }
+  .tech-art { max-width: 26rem; }
+}
+
 /* ---------- Epilog ---------- */
 
 .epilog {
@@ -682,7 +819,7 @@ img { max-width: 100%; display: block; }
    animations und backdrop-filter: beide frieren manche eingebettete
    Chromium-Compositor ein. Der JS-Pfad ist überall gleich fluessig. */
 
-.js-motion .ch-head, .js-motion .ch-body, .js-motion .artefact-card, .js-motion .epilog-text {
+.js-motion .ch-head, .js-motion .ch-body, .js-motion .artefact-card, .js-motion .tech-card, .js-motion .epilog-text {
   opacity: 0; translate: 0 26px;
   transition: opacity 0.75s cubic-bezier(0.2, 0.7, 0.2, 1), translate 0.75s cubic-bezier(0.2, 0.7, 0.2, 1);
 }

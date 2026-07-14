@@ -11,9 +11,9 @@
   <link rel="preload" href="assets/fonts/archivo-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
   <!-- ?v bei jeder Änderung an CSS/JS erhöhen — bricht veraltete CDN-/Browser-Caches,
        damit HTML und Skripte nach einem Deploy immer als ein Satz zusammenpassen -->
-  <link rel="stylesheet" href="styles.css?v=2">
-  <script src="i18n.js?v=2" defer></script>
-  <script src="main.js?v=2" defer></script>
+  <link rel="stylesheet" href="styles.css?v=3">
+  <script src="i18n.js?v=3" defer></script>
+  <script src="main.js?v=3" defer></script>
 </head>
 <body>
   <a class="skip" href="#kap-1" data-i18n="ui.skip">Zum ersten Kapitel springen</a>
@@ -87,6 +87,25 @@
       </div>
     </section>
 
+    <aside class="tech" aria-label="Werkbank: Wie das Kaltschmieden funktioniert" data-i18n-aria="tech1.aria" style="--epoch: var(--e1);">
+      <div class="tech-card">
+        <header class="tech-head">
+          <p class="tech-kicker" data-i18n="tech.kicker">Werkbank</p>
+          <h3 class="tech-title" data-i18n="tech1.title">Wie das Kaltschmieden funktioniert</h3>
+        </header>
+        <figure class="tech-art">
+          <img src="assets/img/tech-01-kaltschmieden.webp" data-i18n-alt="tech1.alt" alt="Buntstift-Schautafel: Eine Hand klopft ein Kupferstück auf einem Steinamboss; Lupenkreise zeigen das innere Gefüge — geordnet, nach dem Hämmern gestaucht, nach dem Feuer wieder entspannt; Pfeile verbinden Hammer, Lupen und Lagerfeuer zu einem Kreislauf." loading="lazy">
+        </figure>
+        <ol class="tech-steps">
+          <li data-i18n="tech1.s1">Jeder Schlag verschiebt die Ebenen des Kupfer-Kristallgitters gegeneinander; die Störungen stauen sich, das Metall wird härter — Kaltverfestigung.</li>
+          <li data-i18n="tech1.s2">Irgendwann kann das gestaute Gefüge nicht mehr ausweichen: Weiterhämmern reißt es auf.</li>
+          <li data-i18n="tech1.s3">In der Glut ordnen sich die Atome zu frischen, spannungsfreien Körnern — Rekristallisation. Das Kupfer ist wieder weich, ohne je zu schmelzen.</li>
+          <li data-i18n="tech1.s4">Hämmern, glühen, wieder hämmern: In diesem Kreislauf entstanden Perlen, Nadeln und Ahlen.</li>
+        </ol>
+        <p class="tech-fact"><strong class="tech-fact-num" data-i18n="tech1.factnum">≈ 300 °C</strong> <span data-i18n="tech1.facttext">mehr braucht das Weichglühen nicht — gewöhnliche Lagerfeuerglut genügt.</span></p>
+      </div>
+    </aside>
+
     <section class="chapter" id="kap-2" data-chapter="2" data-year-start="-5000" data-year-end="-3300" style="--epoch: var(--e2); --epoch-soft: var(--e2-soft); --wonk: 1; --soft: 88;">
       <header class="ch-head">
         <p class="ch-kicker"><span class="ch-num" data-i18n="ch2.num">Kapitel 2</span><span class="ch-range" data-i18n="ch2.range">um 5000 – 3300 v. Chr.</span></p>
@@ -106,6 +125,25 @@
         <aside class="margin-note" data-i18n="ch2.note">Die Kupferzeit trägt viele Namen: Chalkolithikum, Äneolithikum — wörtlich „Kupfersteinzeit", weil Stein und Metall noch nebeneinander lebten.</aside>
       </div>
     </section>
+
+    <aside class="tech" aria-label="Werkbank: Wie die erste Verhüttung funktioniert" data-i18n-aria="tech2.aria" style="--epoch: var(--e2);">
+      <div class="tech-card">
+        <header class="tech-head">
+          <p class="tech-kicker" data-i18n="tech.kicker">Werkbank</p>
+          <h3 class="tech-title" data-i18n="tech2.title">Wie die erste Verhüttung funktioniert</h3>
+        </header>
+        <figure class="tech-art">
+          <img src="assets/img/tech-02-verhuettung.webp" data-i18n-alt="tech2.alt" alt="Buntstift-Schautafel: Querschnitt einer Schmelzgrube — Schichten aus Holzkohle und grünem Malachit, zwei Blasrohre mit Luftpfeilen, am Grund sammelt sich flüssiges Kupfer, daneben eine offene Steinform für ein Beil." loading="lazy">
+        </figure>
+        <ol class="tech-steps">
+          <li data-i18n="tech2.s1">In der Grube glüht Holzkohle; durch Blasrohre gepresste Luft treibt die Temperatur über den Schmelzpunkt des Kupfers.</li>
+          <li data-i18n="tech2.s2">Die Hitze zerlegt den Malachit zu Kupferoxid — und das Kohlenmonoxid der Glut entreißt ihm den Sauerstoff: Reduktion.</li>
+          <li data-i18n="tech2.s3">Blankes Kupfer sammelt sich flüssig am Grund; Gestein und Asche schwimmen als Schlacke obenauf.</li>
+          <li data-i18n="tech2.s4">Das flüssige Metall wird in Formen aus Stein oder Ton gegossen — aus grünem Stein ist Werkzeug geworden.</li>
+        </ol>
+        <p class="tech-fact"><strong class="tech-fact-num" data-i18n="tech2.factnum">CO</strong> <span data-i18n="tech2.facttext">Kohlenmonoxid ist das eigentliche Werkzeug der Verhüttung: Es trägt den Sauerstoff aus dem Erz davon.</span></p>
+      </div>
+    </aside>
 
     <aside class="artefact" aria-label="Artefakt: Das Beil vom Similaun" data-i18n-aria="art1.aria">
       <figure class="artefact-card">
@@ -138,6 +176,25 @@
       </div>
     </section>
 
+    <aside class="tech" aria-label="Werkbank: Wie der Bronzeguss funktioniert" data-i18n-aria="tech3.aria" style="--epoch: var(--e3);">
+      <div class="tech-card">
+        <header class="tech-head">
+          <p class="tech-kicker" data-i18n="tech.kicker">Werkbank</p>
+          <h3 class="tech-title" data-i18n="tech3.title">Wie der Bronzeguss funktioniert</h3>
+        </header>
+        <figure class="tech-art">
+          <img src="assets/img/tech-03-bronzeguss.webp" data-i18n-alt="tech3.alt" alt="Buntstift-Schautafel: Aufgeklappte zweiteilige Steinform für ein Schwert mit Eingusstrichter, ein Tiegel gießt goldene Bronze; kleine Folge daneben: Wachsfigur, Tonmantel, ausgeschmolzene Form; eine Schale mit neun Kupfer- und einer Zinnscheibe." loading="lazy">
+        </figure>
+        <ol class="tech-steps">
+          <li data-i18n="tech3.s1">Neun Teile Kupfer, ein Teil Zinn schmelzen im Tontiegel; die Mischung schmilzt früher als reines Kupfer und fließt dünnflüssiger in jeden Winkel.</li>
+          <li data-i18n="tech3.s2">Die zweiteilige Steinform ist vorgewärmt und innen geschwärzt, damit sich der Guss löst; feine Kanäle lassen die verdrängte Luft entweichen.</li>
+          <li data-i18n="tech3.s3">Für filigrane Stücke wird ein Wachsmodell mit Ton ummantelt und das Wachs ausgeschmolzen — der Hohlraum ist die verlorene Form.</li>
+          <li data-i18n="tech3.s4">Nach dem Erstarren: Form öffnen, Gusshaut und Grate abarbeiten, die Schneide kalt nachhämmern — das verdichtet und härtet sie.</li>
+        </ol>
+        <p class="tech-fact"><strong class="tech-fact-num" data-i18n="tech3.factnum">9 : 1</strong> <span data-i18n="tech3.facttext">das klassische Rezept der Bronzezeit — und bis heute die Grundformel vieler Bronzen.</span></p>
+      </div>
+    </aside>
+
     <aside class="artefact" aria-label="Artefakt: Die Himmelsscheibe von Nebra" data-i18n-aria="art2.aria">
       <figure class="artefact-card">
         <img src="assets/img/vignette-nebra-scheibe.webp" data-i18n-alt="art2.alt" alt="Handgemalte Vignette: Die Himmelsscheibe von Nebra — tiefblau-grün patinierte Bronzescheibe mit goldener Sonnenbarke, Mondsichel und dem Sternhaufen der Plejaden." loading="lazy">
@@ -169,6 +226,25 @@
       </div>
     </section>
 
+    <aside class="tech" aria-label="Werkbank: Wie der Rennofen funktioniert" data-i18n-aria="tech4.aria" style="--epoch: var(--e4);">
+      <div class="tech-card">
+        <header class="tech-head">
+          <p class="tech-kicker" data-i18n="tech.kicker">Werkbank</p>
+          <h3 class="tech-title" data-i18n="tech4.title">Wie der Rennofen funktioniert</h3>
+        </header>
+        <figure class="tech-art">
+          <img src="assets/img/tech-04-rennofen.webp" data-i18n-alt="tech4.alt" alt="Buntstift-Schautafel: Querschnitt eines Rennofens — Schichten aus Erz und Holzkohle, Blasebalg und Tondüsen mit Luftpfeilen, ablaufende Schlacke, die glühende Luppe über den Düsen; daneben verdichtet ein Hammer die Luppe auf einem Amboss." loading="lazy">
+        </figure>
+        <ol class="tech-steps">
+          <li data-i18n="tech4.s1">Der Lehmschacht wird abwechselnd mit Holzkohle und geröstetem Erz beschickt; Blasebälge pressen Luft durch Tondüsen an seinem Fuß.</li>
+          <li data-i18n="tech4.s2">Kohlenmonoxid nimmt dem Erz den Sauerstoff — im festen Zustand: Das Eisen wird dabei nie flüssig.</li>
+          <li data-i18n="tech4.s3">Das taube Gestein verbindet sich zu flüssiger Schlacke und rinnt aus dem Ofen — von diesem „Rinnen" hat der Rennofen seinen Namen.</li>
+          <li data-i18n="tech4.s4">Zurück bleibt die Luppe, ein glühender Eisenschwamm. Kräftiges Ausschmieden presst die restliche Schlacke heraus und verdichtet das Metall.</li>
+        </ol>
+        <p class="tech-fact"><strong class="tech-fact-num" data-i18n="tech4.factnum">1.538 °C</strong> <span data-i18n="tech4.facttext">der Schmelzpunkt von Eisen — für antike Öfen unerreichbar. Der Rennofen umgeht ihn einfach.</span></p>
+      </div>
+    </aside>
+
     <section class="chapter" id="kap-5" data-chapter="5" data-year-start="-800" data-year-end="500" style="--epoch: var(--e5); --epoch-soft: var(--e5-soft); --wonk: 0; --soft: 50;">
       <header class="ch-head">
         <p class="ch-kicker"><span class="ch-num" data-i18n="ch5.num">Kapitel 5</span><span class="ch-range" data-i18n="ch5.range">um 800 v. Chr. – 500 n. Chr.</span></p>
@@ -188,6 +264,25 @@
         <aside class="margin-note" data-i18n="ch5.note">„Stahl" ist schlicht Eisen mit 0,2 bis 2 Prozent Kohlenstoff. Weniger: weiches Schmiedeeisen. Mehr: sprödes Gusseisen.</aside>
       </div>
     </section>
+
+    <aside class="tech" aria-label="Werkbank: Wie das Härten funktioniert" data-i18n-aria="tech5.aria" style="--epoch: var(--e5);">
+      <div class="tech-card">
+        <header class="tech-head">
+          <p class="tech-kicker" data-i18n="tech.kicker">Werkbank</p>
+          <h3 class="tech-title" data-i18n="tech5.title">Wie das Härten funktioniert</h3>
+        </header>
+        <figure class="tech-art">
+          <img src="assets/img/tech-05-haerten.webp" data-i18n-alt="tech5.alt" alt="Buntstift-Schautafel: Drei Stationen des Härtens — Klinge in der Glut, Klinge im dampfenden Wasserfass, Klinge mit strohgelben bis blauen Anlauffarben über kleiner Flamme; Lupenkreise zeigen das Gefüge jeder Station." loading="lazy">
+        </figure>
+        <ol class="tech-steps">
+          <li data-i18n="tech5.s1">Aufkohlen: Tage in glühender Holzkohle lassen Kohlenstoff in die Oberfläche des Eisens einwandern — erst das macht es härtbar.</li>
+          <li data-i18n="tech5.s2">Härten: Bei Kirschrotglut ordnet sich das Eisengitter um; schlagartiges Abschrecken im Wasser friert es in einer verspannten, extrem harten Struktur ein.</li>
+          <li data-i18n="tech5.s3">So ist die Klinge glashart, aber spröde. Behutsames Wiedererwärmen — das Anlassen — nimmt die Spannung heraus: hart und zäh zugleich.</li>
+          <li data-i18n="tech5.s4">Die Anlauffarben von Strohgelb bis Blau zeigten dem Schmied die Anlasstemperatur an — ein Thermometer aus Farbe.</li>
+        </ol>
+        <p class="tech-fact"><strong class="tech-fact-num" data-i18n="tech5.factnum">≈ 800 °C</strong> <span data-i18n="tech5.facttext">Kirschrot: Bei dieser Glühfarbe ist Stahl bereit zum Abschrecken.</span></p>
+      </div>
+    </aside>
 
     <aside class="artefact" aria-label="Artefakt: Damaszener Stahl" data-i18n-aria="art3.aria">
       <figure class="artefact-card">
@@ -222,6 +317,25 @@
       </div>
     </section>
 
+    <aside class="tech" aria-label="Werkbank: Wie Wasserkraft und Hochofen funktionieren" data-i18n-aria="tech6.aria" style="--epoch: var(--e6);">
+      <div class="tech-card">
+        <header class="tech-head">
+          <p class="tech-kicker" data-i18n="tech.kicker">Werkbank</p>
+          <h3 class="tech-title" data-i18n="tech6.title">Wie Wasserkraft und Hochofen funktionieren</h3>
+        </header>
+        <figure class="tech-art">
+          <img src="assets/img/tech-06-wasserhammer.webp" data-i18n-alt="tech6.alt" alt="Buntstift-Schautafel: Ein Wasserrad treibt eine Nockenwelle, die einen Schwanzhammer hebt und auf glühendes Eisen fallen lässt, mit Dreh- und Hebelpfeilen; im Hintergrund ein kleiner Hochofen-Querschnitt mit Blasebälgen und abfließendem Eisen." loading="lazy">
+        </figure>
+        <ol class="tech-steps">
+          <li data-i18n="tech6.s1">Das Wasserrad dreht eine Welle mit Nocken; jede Nocke drückt den Schwanz des Hammerbalkens nieder und lässt das Haupt auf den Amboss fallen — im Takt des Baches.</li>
+          <li data-i18n="tech6.s2">Dieselbe Welle walkt mannshohe Blasebälge: mehr Wind, mehr Glut — die Öfen können wachsen.</li>
+          <li data-i18n="tech6.s3">Im hohen Schacht nimmt das niedersinkende Eisen Kohlenstoff auf; das senkt seinen Schmelzpunkt so weit, dass es erstmals flüssig abfließt: Gusseisen.</li>
+          <li data-i18n="tech6.s4">Gusseisen füllt Formen wie einst Bronze, ist aber spröde; wer Schmiedeeisen will, frischt es im Herdfeuer nach — der Kohlenstoff wird wieder ausgetrieben.</li>
+        </ol>
+        <p class="tech-fact"><strong class="tech-fact-num" data-i18n="tech6.factnum">1.147 °C</strong> <span data-i18n="tech6.facttext">mit gut vier Prozent Kohlenstoff schmilzt Eisen fast 400 Grad früher — der Trick des Hochofens.</span></p>
+      </div>
+    </aside>
+
     <section class="chapter" id="kap-7" data-chapter="7" data-year-start="1709" data-year-end="1886" style="--epoch: var(--e7); --epoch-soft: var(--e7-soft); --wonk: 0; --soft: 25;">
       <header class="ch-head">
         <p class="ch-kicker"><span class="ch-num" data-i18n="ch7.num">Kapitel 7</span><span class="ch-range" data-i18n="ch7.range">1709 – 1900</span></p>
@@ -241,6 +355,25 @@
         <aside class="margin-note" data-i18n="ch7.note">1855, ein Jahr vor Bessemers Patent, produzierte die Welt rund 60.000 Tonnen Stahl im Jahr. 1900 waren es 28 Millionen.</aside>
       </div>
     </section>
+
+    <aside class="tech" aria-label="Werkbank: Wie der Bessemer-Konverter funktioniert" data-i18n-aria="tech7.aria" style="--epoch: var(--e7);">
+      <div class="tech-card">
+        <header class="tech-head">
+          <p class="tech-kicker" data-i18n="tech.kicker">Werkbank</p>
+          <h3 class="tech-title" data-i18n="tech7.title">Wie der Bessemer-Konverter funktioniert</h3>
+        </header>
+        <figure class="tech-art">
+          <img src="assets/img/tech-07-bessemer.webp" data-i18n-alt="tech7.alt" alt="Buntstift-Schautafel: Querschnitt einer Bessemer-Birne — feuerfeste Auskleidung, flüssiges Roheisen, Luftdüsen im Boden mit aufsteigenden Blasen, Funkenfontäne aus der Öffnung; daneben drei kleine Stellungen der Birne: befüllen, blasen, ausgießen." loading="lazy">
+        </figure>
+        <ol class="tech-steps">
+          <li data-i18n="tech7.s1">Die birnenförmige Retorte wird liegend mit flüssigem Roheisen aus dem Hochofen gefüllt und dann aufgerichtet.</li>
+          <li data-i18n="tech7.s2">Pressluft strömt durch Düsen im Boden mitten durch die Schmelze; der gelöste Kohlenstoff verbrennt in einer tosenden Funkenfontäne.</li>
+          <li data-i18n="tech7.s3">Diese Verbrennung heizt die Schmelze von selbst weiter auf — der Konverter braucht keinerlei Brennstoff, die Reaktion trägt sich allein.</li>
+          <li data-i18n="tech7.s4">Dann wird die Birne gekippt und gießt fertigen Stahl; eine dosierte Prise Kohlenstoff zurück, und die Charge stimmt.</li>
+        </ol>
+        <p class="tech-fact"><strong class="tech-fact-num" data-i18n="tech7.factnum">≈ 1.600 °C</strong> <span data-i18n="tech7.facttext">am Ende ist die Schmelze heißer als am Anfang — ganz ohne Feuer von außen.</span></p>
+      </div>
+    </aside>
 
     <section class="chapter" id="kap-8" data-chapter="8" data-year-start="1886" data-year-end="2000" style="--epoch: var(--e8); --epoch-soft: var(--e8-soft); --wonk: 0; --soft: 12;">
       <header class="ch-head">
@@ -264,6 +397,25 @@
       </div>
     </section>
 
+    <aside class="tech" aria-label="Werkbank: Wie die Aluminium-Elektrolyse funktioniert" data-i18n-aria="tech8.aria" style="--epoch: var(--e8);">
+      <div class="tech-card">
+        <header class="tech-head">
+          <p class="tech-kicker" data-i18n="tech.kicker">Werkbank</p>
+          <h3 class="tech-title" data-i18n="tech8.title">Wie die Aluminium-Elektrolyse funktioniert</h3>
+        </header>
+        <figure class="tech-art">
+          <img src="assets/img/tech-08-elektrolyse.webp" data-i18n-alt="tech8.alt" alt="Buntstift-Schautafel: Querschnitt einer Elektrolysezelle — Kohleanoden hängen ins glühende Bad, am Boden sammelt sich silbriges Aluminium, Strompfeile und aufsteigende Bläschen, ein Saugrohr zapft das Metall ab." loading="lazy">
+        </figure>
+        <ol class="tech-steps">
+          <li data-i18n="tech8.s1">Aluminiumoxid schmilzt erst jenseits von 2.000 Grad — aussichtslos. Gelöst in geschmolzenem Kryolith sinkt die Arbeitstemperatur auf rund 960 Grad.</li>
+          <li data-i18n="tech8.s2">Gleichstrom fließt von Kohleanoden durch das Bad: Am Wannenboden scheidet sich flüssiges Aluminium ab und sammelt sich als silbriger See.</li>
+          <li data-i18n="tech8.s3">Der frei werdende Sauerstoff verbrennt langsam die Kohleanoden — sie zehren sich auf und werden regelmäßig nachgesetzt.</li>
+          <li data-i18n="tech8.s4">Alle paar Tage wird das Metall abgesaugt; die Zelle selbst läuft ununterbrochen weiter, oft jahrelang.</li>
+        </ol>
+        <p class="tech-fact"><strong class="tech-fact-num" data-i18n="tech8.factnum">≈ 14 kWh</strong> <span data-i18n="tech8.facttext">Strombedarf je Kilogramm Aluminium — darum stehen die Hütten direkt am Kraftwerk.</span></p>
+      </div>
+    </aside>
+
     <section class="chapter" id="kap-9" data-chapter="9" data-year-start="2000" data-year-end="2026" style="--epoch: var(--e9); --epoch-soft: var(--e9-soft); --wonk: 0; --soft: 0;">
       <header class="ch-head">
         <p class="ch-kicker"><span class="ch-num" data-i18n="ch9.num">Kapitel 9</span><span class="ch-range" data-i18n="ch9.range">2000 – heute</span></p>
@@ -285,6 +437,25 @@
         <aside class="margin-note" data-i18n="ch9.note">Der Elektrolichtbogenofen, der heute Schrott recycelt, wird mit Ökostrom selbst zum „grünen Feuer" — die Esse der Zukunft ist elektrisch.</aside>
       </div>
     </section>
+
+    <aside class="tech" aria-label="Werkbank: Wie der 3D-Metalldruck funktioniert" data-i18n-aria="tech9.aria" style="--epoch: var(--e9);">
+      <div class="tech-card">
+        <header class="tech-head">
+          <p class="tech-kicker" data-i18n="tech.kicker">Werkbank</p>
+          <h3 class="tech-title" data-i18n="tech9.title">Wie der 3D-Metalldruck funktioniert</h3>
+        </header>
+        <figure class="tech-art">
+          <img src="assets/img/tech-09-metalldruck.webp" data-i18n-alt="tech9.alt" alt="Buntstift-Schautafel: Bauraum eines 3D-Metalldruckers — Laser und zwei Spiegel lenken einen türkisen Strahl ins Titanpulver, ein Gitterbauteil wächst heran, eine Rakel schiebt frisches Pulver, Pfeile zeigen die absinkende Plattform." loading="lazy">
+        </figure>
+        <ol class="tech-steps">
+          <li data-i18n="tech9.s1">Eine Rakel zieht eine hauchdünne Schicht Metallpulver über die Bauplattform — unter Schutzgas, damit nichts verbrennt.</li>
+          <li data-i18n="tech9.s2">Zwei flinke Spiegel lenken den Laser; wo der Strahl trifft, verschmilzt das Pulver mit der Schicht darunter — der Querschnitt des Bauteils, Linie für Linie.</li>
+          <li data-i18n="tech9.s3">Die Plattform senkt sich um genau eine Schichtdicke, frisches Pulver darüber, nächste Lage — viele tausend Mal.</li>
+          <li data-i18n="tech9.s4">Zum Schluss: loses Pulver absaugen und wiederverwenden, Stützstrukturen entfernen, das Bauteil wärmebehandeln.</li>
+        </ol>
+        <p class="tech-fact"><strong class="tech-fact-num" data-i18n="tech9.factnum">30 µm</strong> <span data-i18n="tech9.facttext">eine typische Schichtdicke — gut halb so dick wie ein menschliches Haar.</span></p>
+      </div>
+    </aside>
 
     <section class="epilog" data-year-start="2026" data-year-end="2026">
       <p class="epilog-text" data-i18n="ep.text">Elftausend Jahre — vom Klopfen am Flussufer bis zum Laserstrahl im Titanpulver. Und jedes Werkstück begann gleich: mit einem Menschen, der ein Stück Erde ins Feuer hielt und sich fragte, was daraus werden könnte.</p>
